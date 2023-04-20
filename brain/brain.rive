@@ -3,6 +3,9 @@
 + hello
 - Hello, what is your name?
 
++ how are you
+- I'm fine, thank you
+
 + _
 % hello what is your name
 - Nice to meet you <formal>!
@@ -11,11 +14,25 @@
 - Nice to meet you <star>
 - Nice meeting you <star>
 
-+ thank you
++ who are you
+- I'm a robot
+
++ thank you 
 - You are welcome
 - Welcome
 - No problem
 - No worries!
+
++ knock knock
+- Who's there
+
++ *
+% who is there
+- <star>who
+
++ *
+% *who 
+- lol
 
 + *
 - Sorry did not get what you said

@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #f2f2f2;
+  background: #1d1d1d;
 }
 
 .title {
@@ -20,7 +20,7 @@ body {
 
 .title h1 {
   letter-spacing: 0.75px;
-  color: blueviolet;
+  color: rgb(140, 151, 199);
 }
 
 .wrapper {
@@ -28,8 +28,8 @@ body {
 }
 
 .chat {
-  background: white;
-  box-shadow: 10px 10px 0px blueviolet;
+  background: rgb(255, 255, 255);
+  box-shadow: 10px 10px 0px rgb(140, 151, 199);
   overflow: scroll;
   height: 100%;
   display: flex;
