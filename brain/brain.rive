@@ -1,38 +1,62 @@
 ! version = 2.0
 
-+ hello
-- Hello, what is your name?
++ *
+- Let's talk about tampons {topic=tampons}
 
-+ how are you
-- I'm fine, thank you
+> topic tampons
 
-+ _
-% hello what is your name
-- Nice to meet you <formal>!
++ what [*] (tampon|tampons)
+- A tampon is a sanitary product usually made of cotton. Tampons are inserted into the vaginal canal to absorb the blood.
 
-+ my name is *
-- Nice to meet you <star>
-- Nice meeting you <star>
+! local concat = newline
 
-+ who are you
-- I'm a robot
-
-+ thank you 
-- You are welcome
-- Welcome
-- No problem
-- No worries!
-
-+ knock knock
-- Who's there
++ how [*] (tampon|tampons)
+- It is important to wash your hands before and after inserting a tampon!\n
+^ Depending on what brand you use, you simply take off the packaging and use a finger to push it up the vaginal canal. Some tampons also have an applicator, in that case you place this to the vagnial canal and press the tampon out. \n
+^ You should not be able to feel the tampon inside of you. If you do, you might have inserted it wrong. \n
+^ Do you also want to know how to take out a tampon?
 
 + *
-% who is there
-- <star>who
+- It is important to wash your hands before and after inserting a tampon!
+^ Depending on what brand you use, you simply take off the packaging and use a finger to push it up the vaginal canal. Some tampons also have an applicator, in that case you place this to the vagnial canal and press the tampon out. 
+^ You should not be able to feel the tampon inside of you. If you do, you might have inserted it wrong. 
+^ Do you also want to know how to take out a tampon?
+* <star> == yes => To remove a tampon you simply pull the string.\n
+^Remeber to always wash you hands before and after removing a tampon.
+* <star> == no => Okay
+
+! local concat = none
+
+< topic
 
 + *
-% *who 
-- lol
+- Let's talk about pads {topic=pads}
+
+> topic pads
+
++ what [*] (pad|pads)
+- A tampon is a sanitary product usually made of cotton. Tampons are inserted into the vaginal canal to absorb the blood.
+
+! local concat = newline
+
++ how [*] (pad|pads)
+- It is important to wash your hands before and after inserting a tampon!\n
+^ Depending on what brand you use, you simply take off the packaging and use a finger to push it up the vaginal canal. Some tampons also have an applicator, in that case you place this to the vagnial canal and press the tampon out. \n
+^ You should not be able to feel the tampon inside of you. If you do, you might have inserted it wrong. \n
+^ Do you also want to know how to take out a tampon?
+
++ *
+- It is important to wash your hands before and after inserting a tampon!
+^ Depending on what brand you use, you simply take off the packaging and use a finger to push it up the vaginal canal. Some tampons also have an applicator, in that case you place this to the vagnial canal and press the tampon out. 
+^ You should not be able to feel the tampon inside of you. If you do, you might have inserted it wrong. 
+^ Do you also want to know how to take out a tampon?
+* <star> == yes => To remove a tampon you simply pull the string.\n
+^Remeber to always wash you hands before and after removing a tampon.
+* <star> == no => Okay
+
+! local concat = none
+
+< topic
 
 + *
 - Sorry did not get what you said
