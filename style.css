@@ -8,7 +8,9 @@
 }
 
 body {
-  background: #1d1d1d;
+  background-image: url(file:///Users/saranaess/Dropbox/Mac/Documents/Olive.png);
+  background-size: 1500px;
+  background-color: rgb(255, 213, 213);
 }
 
 .title {
@@ -20,7 +22,7 @@ body {
 
 .title h1 {
   letter-spacing: 0.75px;
-  color: rgb(140, 151, 199);
+  color: rgb(175 43 59);
 }
 
 .wrapper {
@@ -28,8 +30,8 @@ body {
 }
 
 .chat {
-  background: rgb(255, 255, 255);
-  box-shadow: 10px 10px 0px rgb(140, 151, 199);
+  background: rgb(255, 241, 241);
+  box-shadow: 10px 10px 0px rgb(175 43 59);
   overflow: scroll;
   height: 100%;
   display: flex;
@@ -57,13 +59,13 @@ body {
 }
 
 .messages div a:hover {
-  color: blueviolet;
+  color: rgb(175 43 59);
 }
 
 .messages .bot {
   text-align: left;
   margin-right: auto;
-  background: black;
+  background: #fb6161;
   color: white;
 }
 
@@ -72,8 +74,8 @@ body {
   margin-right: 20px;
   margin-left: auto;
   background: white;
-  border: 1px solid blueviolet;
-  color: blueviolet;
+  border: 1px solid rgb(175 43 59);
+  color: rgb(175 43 59);
 }
 
 .actions {
@@ -82,7 +84,7 @@ body {
   position: sticky;
   bottom: -1px;
   padding: 10px 0px 20px;
-  background: white;
+  background: rgb(255, 241, 241);
 }
 
 .actions input {
@@ -97,14 +99,14 @@ body {
 }
 
 input:focus {
-  border-bottom: 2px solid blueviolet;
+  border-bottom: 2px solid rgb(175 43 59);
 }
 
 @media all and (min-width: 720px) {
   .wrapper {
     width: 40vw;
     height: 90vh;
-    margin: 0 auto 2.5vh;
+    margin: 0 5vh;
   }
 }
 
