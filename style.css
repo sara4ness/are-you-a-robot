@@ -9,7 +9,7 @@
 
 body {
   background-image: url(Olive.png);
-  background-size: 1500px;
+  background-size: cover;
   background-color: rgb(255, 213, 213);
 }
 
@@ -106,7 +106,7 @@ input:focus {
   .wrapper {
     width: 40vw;
     height: 90vh;
-    margin: 0 5vh;
+    margin: 0 15vh;
   }
 }
 

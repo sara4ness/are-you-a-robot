@@ -4,20 +4,96 @@
 
 + (hi|hello|hey)
 - Hi, my name is Olive, I am an ovarie.\n
-^ I am here to talk to you about periods, sanitary products, birth control and more.\n
+^ I am here to talk to you about:
+^ - Periods
+^ - Sanitary products
+^ - Birth control
+^ - Sexual health
+^ - Period poverty\n
 ^ If you want to learn more about one of these topics just respond with the topic you wanna talk about.
 
 + *
 * <star> == sanitary products => Do you want to talk about pads, tampons or menstrual cups?
-* <star> == birth control => What do you want to know about periods?
-- Please pick one of these topics: Periods, sanitary products, birth control or period poverty.
+* <star> == birth control => Hii, I am Ivy. I am here to tell you everything about birth control. So, what do you want to know? {topic=birthcontrol}
+* <star> == sexual health => Yoo, Connie here. I heard you wanted to know some more about sexual health. What can I tell you about it?{topic=sexualhealth}
+* <star> == (period|periods) => Okay girl, what do you wanna know about periods?{topic=periods}
+* <star> == period poverty => I see, what do you wanna know about period poverty?{topic=periodpoverty}
+- Please pick one of these topics:\n 
+^ - Periods
+^ - Sanitary products
+^ - Birth control
+^ - Sexual health
+^ - Period poverty
 
 ! local concat = none
+
++ [*] birth control [*]
+- Hi there, I am Ivy. I am here to tell you everything about birth control. So, what do you want to know? {topic=birthcontrol}
 
 + [*] (tampon|tampons) [*]
 - Heeey, girl! My name is Tammy the tampon. I am here to answer all the questions you have about tampons. What do you wanna know? {topic=tampons}
 
++ [*] menstrual (cup|cups) [*]
+- Okay girl, what do you wanna know about menstrual cups?{topic=menstrualcups}
+
++ [*] sexual health [*]
+- Yoo, Connie here. I heard you wanted to know some more about sexual health. What can I tell you about it? {topic=sexualhealth}
+
++ [*] (period|periods) [*]
+- Okay girl, what do you wanna know about periods? {topic=periods}
+
++ [*] period poverty [*]
+I see, what do you wanna know about period poverty? {topic=periodpoverty}
+
+
+
+> topic periods
+
+! local concat = newline
+
++ (hi|hello|hey)
+- Hi, my name is Olive, I am an ovarie. What do you wanna know about periods?
+
++ *
+- I am sorry, I didn't get that. Do you wanna talk about something other than periods?
+
++ *
+%i am sorry i did not get that do you want to talk about something other than periods
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Tampons
+^ - Pads
+^ - Menstrual cups
+^ - Birth control
+^ - Sexual health
+^ - Period poverty
+* <star> == no => Okay, if you want to know more about periods try asking one of these questions:
+- Please answer with yes or no.
+
++ *
+% thats fine what do you want to talk about instead here are some options tampons pads menstrual cups birth control sexual health period poverty
+* <star> == pads => Let me send you to Patty. {topic=pads} 
+* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} 
+* <star> == tampons => Let me send you to Tammy! {topic=tampons} 
+* <star> == birth control => birth control {topic=birthcontrol}
+* <star> == sexual health => Let me send you to Connie{topic=sexualhealth}
+* <star> == period poverty => Let me send you back to Olive. {topic=periodpoverty} 
+- Please respond with one of these options:\n
+^ - Tampons
+^ - Pads
+^ - Menstrual cups
+^ - Birth control
+^ - Sexual health
+^ - Period poverty
+
+! local concat = none
+
+< topic
+
+
+
 > topic tampons
++ [*] (hi|hello|hey|tammy) [*]
+- Hi, I am Tammy. I am here to talk to you about everything tampon related. What do you wanna know?
 
 + what [*] (tampon|tampons)
 - A tampon is a sanitary product usually made of cotton. Tampons are inserted into the vaginal canal to absorb the blood.
@@ -40,16 +116,48 @@
 + [*](pad|pads)[*]
 - Let me send you to Patty. {topic=pads} 
 
++ *
+- I am sorry, I didn't get that. Do you wanna talk about something other than tampons?
+
++ *
+%i am sorry i did not get that do you want to talk about something other than tampons
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Pads
+^ - Menstrual cups
+^ - Periods
+^ - Birth control
+^ - Sexual health
+^ - Period poverty
+* <star> == no => Okay, if you want to know more about tampons try asking one of these questions:
+- Please answer with yes or no.
+
++ *
+% thats fine what do you want to talk about instead here are some options pads menstrual cups periods birth control sexual health period poverty
+* <star> == pads => Let me send you to Patty. {topic=pads} 
+* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} 
+* <star> == periods => Let me send you back to Olive. {topic=periods} 
+* <star> == birth control => birth control {topic=birthcontrol}
+* <star> == sexual health => Let me send you to Connie{topic=sexualhealth}
+* <star> == period poverty => Let me send you back to Olive. {topic=periodpoverty} 
+- Please respond with one of these options:\n
+^ - Pads
+^ - Menstrual cups
+^ - Periods
+^ - Birth control
+^ - Sexual health
+^ - Period poverty
+
 ! local concat = none
 
 < topic
 
-! local concat = newline
+
 
 + [*] (pad|pads) [*]
 - Hi, I am Patty. I am here to talk to you about everything pad related. What do you wanna know? {topic=pads}
 
 > topic pads
+! local concat = newline
 
 + [*] (hi|hello|hey|patty) [*]
 - Hi, I am Patty. I am here to talk to you about everything pad related. What do you wanna know?
@@ -58,17 +166,260 @@
 - A pad is a sanitary product usually made of cotton. 
 
 + how [*] (pad|pads)
-- It is important to wash your hands before and after using a tampon!\n
+- It is important to wash your hands before and after using a pad!\n
 
 + *
-* <star> == yes => To remove a tampon you simply pull the string.\n
-^Remeber to always wash you hands before and after removing a tampon.
-* <star> == no => Okay
-- Please say yes or no
+- I am sorry, I didn't get that. Do you wanna talk about something other than pads?
+
++ *
+% i am sorry i did not get that do you want to talk about something other than pads
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Tampons
+^ - Menstrual cups
+^ - Periods
+^ - Birth control
+^ - Sexual health
+^ - Period poverty
+* <star> == no => Okay, if you want to know more about pads try asking one of these questions:
+- Please answer with yes or no.
+
++ *
+% thats fine what do you want to talk about instead here are some options tampons menstrual cups periods birth control sexual health period poverty
+* <star> == tampons => Let me send you to Tammy! {topic=tampons} 
+* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} 
+* <star> == periods => Let me send you back to Olive. {topic=periods} 
+* <star> == birth control => birth control {topic=birthcontrol}
+* <star> == sexual health => Let me send you to Connie{topic=sexualhealth}
+* <star> == period poverty => Let me send you back to Olive. {topic=periodpoverty} 
+- Please respond with one of these options:\n
+^ - Tampons
+^ - Menstrual cups
+^ - Periods
+^ - Birth control
+^ - Sexual health
+^ - Period poverty
+
++ [*](tampon|tamponss)[*]
+- Let me send you to Tammy! {topic=tampons} 
 
 ! local concat = none
 
 < topic
+
+
+
+> topic menstrualcups
+
+! local concat = newline
+
++ [*](pad|pads)[*]
+- Let me send you to Patty. {topic=pads} 
+
++ [*](tampon|tamponss)[*]
+- Let me send you to Tammy! {topic=tampons} 
+
++ *
+- I am sorry, I didn't get that. Do you wanna talk about something other than menstrual cups?
+
++ *
+% i am sorry i did not get that do you want to talk about something other than menstrual cups
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Tampons
+^ - Pads
+^ - Periods
+^ - Birth control
+^ - Sexual health
+^ - Period poverty
+* <star> == no => Okay, if you want to know more about menstrual cups try asking one of these questions:
+- Please answer with yes or no.
+
++ *
+% thats fine what do you want to talk about instead here are some options tampons pads periods birth control sexual health period poverty
+* <star> == tampons => Let me send you to Tammy! {topic=tampons} 
+* <star> == pads => Let me send you to Patty. {topic=pads} 
+* <star> == periods => Let me send you back to Olive. {topic=periods} 
+* <star> == birth control => birth control {topic=birthcontrol}
+* <star> == sexual health => Let me send you to Connie{topic=sexualhealth}
+* <star> == period poverty => Let me send you back to Olive. {topic=periodpoverty} 
+- Please respond with one of these options:\n
+^ - Tampons
+^ - Pads
+^ - Periods
+^ - Birth control
+^ - Sexual health
+^ - Period poverty
+
+! local concat = none
+
+< topic
+
+
+
+> topic birthcontrol
+
+! local concat = newline
+
++ [should i] [*] [birth control to] regulate [my] (period|periods)
+- Birth control is a safe, approved way to help regulate and maintain your period, but it isn't the only option!\n 
+^There are many natural ways to help regulate menstrual health, for example adapting your diet to optimise the benefits of your food throughout your cycle.\n 
+^You should always discuss any concerns you may be having surrounding your period with your GP or a trusted health care professional.\n  
+^For more information about using the pill to regulate your period <a href="https://flo.health/menstrual-cycle/health/period/using-the-pill-to-regulate-periods ">click here</a>
+
++ what [birth control is] right [for me]
+- There are many different types of birth control available in the UK, which one is right for you is unique to your body and your needs!\n 
+^A few of the more popular options available to you are:\n 
+^ - The contraceptive pill
+^ - The implant
+^ - The injection
+^ - The IUD\n
+^Please read the article below for additional contraceptive options and advice:\n
+^<a href="https://www.nhs.uk/conditions/contraception/which-method-suits-me/?tabname=methods-of-contraception">Read more here.</a>\n
+^Please note, the best way to figure out what contraceptive method would work best for you is by discussing it with a health care professional. I recommend contacting your doctor or if you do not want to contact your family GP directly find your nearest sexual health clinic for advice! 
+
++ *
+- I am sorry, I didn't get that. Do you wanna talk about something other than birth control?
+
++ *
+% i am sorry i did not get that do you want to talk about something other than birth control
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Tampons
+^ - Pads
+^ - Menstrual cups
+^ - Periods
+^ - Sexual health
+^ - Period poverty
+* <star> == no => Okay, if you want to know more about birth control try asking one of these questions:
+- Please answer with yes or no.
+
++ *
+% thats fine what do you want to talk about instead here are some options tampons pads menstrual cups periods sexual health period poverty
+* <star> == tampons => Let me send you to Tammy! {topic=tampons} 
+* <star> == pads => Let me send you to Patty. {topic=pads} 
+* <star> == periods => Let me send you back to Olive. {topic=periods} 
+* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} 
+* <star> == sexual health => Let me send you to Connie{topic=sexualhealth}
+* <star> == period poverty => Let me send you back to Olive. {topic=periodpoverty} 
+- Please respond with one of these options:\n
+^ - Tampons
+^ - Pads
+^ - Menstrual cups
+^ - Periods
+^ - Sexual health
+^ - Period poverty
+
+! local concat = none
+
+< topic
+
+
+
+> topic sexualhealth
+
+! local concat = newline
+
++ [i might have an] (std|sti) [what should i do]
+- While it is always recommended to use condoms to help protect yourself from contracting sexually transmitted infections, if you find yourself in the situation where you suspect you might have one, do not worry, I’m here to help!\n 
+^Most STI’s can be successfully treated but it is important you get checked out as soon as possible. If you begin to suspect you may have contracted an STI or experience any of the following symptoms, contact your GP or a sexual health clinic promptly. It is always better to have any concerns or symptoms checked out by a healthcare professional.\n
+^Symptoms of an STI may include:
+^ -	An unusual discharge from the vagina, penis or anus.
+^ -	Pain when peeing.
+^ -	Lumps or skin growth around the genitals or bottom.
+^ -	A rash.
+^ -	Unusual vaginal bleeding.
+^ -	Itchy genitals or anus.
+^ -	Blisters, sores or wards around your genitals or anus.
+^ -	Warts in your mouth or throat, although this is very rare.\n
+^Please try and remember that contracting a sexually transmitted infection is nothing to feel ashamed of and you should not feel embarrassed about asking for help!\n
+^If you have been diagnosed with an STI your doctor will discuss what treatments are best for you, don’t forget to also inform any sexual partners of your diagnosis so they can get checked too.\n 
+^I understand this can be a daunting step to take so please know there are many services available online to anonymously notify a sexual partner that they should get tested, a few of these are:
+^<a href="https://www.anonymoustext.co.uk/how-to-send-an-anonymous-text/">anonymoustext.co.uk</a>
+^<a href="https://tellyourpartner.org ">tellyourpartner.org</a>
+
++ *
+- I am sorry, I didn't get that. Do you wanna talk about something other than sexual health?
+
++ *
+% i am sorry i did not get that do you want to talk about something other than sexual health
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Tampons
+^ - Pads
+^ - Menstrual cups
+^ - Periods
+^ - Birth control
+^ - Period poverty
+* <star> == no => Okay, if you want to know more about sexual health try asking one of these questions:
+- Please answer with yes or no.
+
++ *
+% thats fine what do you want to talk about instead here are some options tampons pads menstrual cups periods birth control period poverty
+* <star> == tampons => Let me send you to Tammy! {topic=tampons} 
+* <star> == pads => Let me send you to Patty. {topic=pads} 
+* <star> == periods => Let me send you back to Olive. {topic=periods} 
+* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} 
+* <star> == birth control => birth control {topic=birthcontrol}
+* <star> == period poverty => Let me send you back to Olive. {topic=periodpoverty} 
+- Please respond with one of these options:\n
+^ - Tampons
+^ - Pads
+^ - Menstrual cups
+^ - Periods
+^ - Birth control
+^ - Period poverty
+
+! local concat = none
+
+< topic
+
+
+
+> topic periodpoverty
+
+! local concat = newline
+
++ [*] (hi|hello|hey|olive) [*]
+- What do you wanna know about period poverty?
+
+- Hi, I am Patty. I am here to talk to you about everything pad related. What do you wanna know?
+
++ what is period poverty
+- Period poverty is
+
++ *
+- I am sorry, I didn't get that. Do you wanna talk about something other than period poverty?
+
++ *
+% i am sorry i did not get that do you want to talk about something other than period poverty
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Tampons
+^ - Pads
+^ - Menstrual cups
+^ - Periods
+^ - Birth control
+^ - Sexual health
+* <star> == no => Okay, if you want to know more about period poverty try asking one of these questions:
+- Please answer with yes or no.
+
++ *
+% thats fine what do you want to talk about instead here are some options tampons pads menstrual cups periods birth control sexual health
+* <star> == tampons => Let me send you to Tammy! {topic=tampons} 
+* <star> == pads => Let me send you to Patty. {topic=pads} 
+* <star> == periods => Let me send you back to Olive. {topic=periods} 
+* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} 
+* <star> == birth control => birth control {topic=birthcontrol}
+* <star> == sexual health => Let me send you to Connie{topic=sexualhealth}
+- Please respond with one of these options:\n
+^ - Tampons
+^ - Pads
+^ - Menstrual cups
+^ - Periods
+^ - Birth control
+^ - Sexual health
+
+! local concat = none
+
+< topic
+
+
 
 + *
 - Sorry did not get what you said
