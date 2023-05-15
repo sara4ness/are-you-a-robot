@@ -1,5 +1,13 @@
 ! version = 2.0
 
+> object changebackground javascript
+
+    const body = document.querySelector("body");
+    body.style.background = `url(${args[0]})`
+    return ""
+
+< object
+
 ! local concat = newline
 
 + (hi|hello|hey|yo)
@@ -11,13 +19,14 @@
 ^ - Sexual health
 ^ - Period poverty\n
 ^ If you want to learn more about one of these topics just respond with the topic you wanna talk about.
+// ^ <call>changebackground Olive.png</call>
 
 + *
 * <star> == sanitary products => Do you want to talk about pads, tampons or menstrual cups?
 * <star> == birth control => Hii, I am Ivy. I am here to tell you everything about birth control. So, what do you want to know? {topic=birthcontrol}
 * <star> == sexual health => Yoo, Connie here. I heard you wanted to know some more about sexual health. What can I tell you about it?{topic=sexualhealth}
-* <star> == (period|periods) => Okay girl, what do you wanna know about periods?{topic=periods}
-* <star> == period poverty => I see, what do you wanna know about period poverty?{topic=periodpoverty}
+* <star> == (period|periods) => Okay girl, what do you wanna know about periods?{topic=periods} <call>changebackground Olive.png</call>
+* <star> == period poverty => I see, what do you wanna know about period poverty?{topic=periodpoverty} <call>changebackground Olive.png</call>
 - Please pick one of these topics:\n 
 ^ - Periods
 ^ - Sanitary products
@@ -40,10 +49,10 @@
 - Yoo, Connie here. I heard you wanted to know some more about sexual health. What can I tell you about it? {topic=sexualhealth}
 
 + [*] (period|periods) [*]
-- Okay girl, what do you wanna know about periods? {topic=periods}
+- Okay girl, what do you wanna know about periods? {topic=periods} <call>changebackground Olive.png</call>
 
 + [*] period poverty [*]
-I see, what do you wanna know about period poverty? {topic=periodpoverty}
+I see, what do you wanna know about period poverty? {topic=periodpoverty} <call>changebackground Olive.png</call>
 
 
 
@@ -53,6 +62,44 @@ I see, what do you wanna know about period poverty? {topic=periodpoverty}
 
 + (hi|hello|hey)
 - Hi, my name is Olive, I am an ovarie. What do you wanna know about periods?
+
++ what is [a] (period|periods)
+- A period is part of the natural menstrual cycle. It's when the lining of your uterus sheds, leading to blood and tissue coming out of your vagina. A period will usually last anywhere from 2-7 days but will vary for everyone!\n 
+^If your period changes drastically surrounding duration, or flow you may want to consult your doctor for a check-up and advice! 
+
++ what happens on a period  
+- Each month your body prepares for pregnancy by releasing an egg from your ovaries, if this egg is not fertilised by sperm, the uterus starts a process to get rid of it. This process is what we call a period. The uterus starts shedding the inner lining leading to blood and tissue exiting from your vagina. 
+
++ what is period poverty
+- Period poverty is the lack of access to sanitary products due to financial constraints. It negatively affects girls and women across the world, as it prevents them from accessing basic period essentials required each month throughout their menstruation cycle.\n 
+^Although period poverty is still a devastating issue, there are now organisations trying to combat this limited access to necessities.\n 
+^If you are currently struggling with period poverty, I am happy to provide additional information about where you can access support, just ask "How can I access free sanitary products?" 
+
++ how can i access free sanitary products
+- If you are in need of period poverty support or access to free sanitary products, here are a few options available for you:\n  
+^ - You can request free period products here: <a href="https://www.freedom4girls.co.uk/request-products/ ">www.freedom4girls.co.uk</a>\n
+^ - You can also contact your local council to see where they are currently providing free products here: <a href="https://www.mygov.scot/free-period-products ">Rwww.mygov.scot/free-period-products</a>\n
+^ - If you are currently a student in a state maintained school, or a 16 to 19 education organisation in England, your place of study is required to provide free sanitary products upon request under the government period product scheme. Just ask a member of staff!\n
+^ - You can also download the Pickupmyperiod app In the app store to find period products available in the area! 
+
++ why have i missed (a period|my period)
+- Periods are a natural part of our body's menstrual cycle, and although on average a cycle last 28 days, it may vary from person to person or month to month, so your period may be slightly later or earlier each time. This is usually nothing to be worried about. There are many reasons why you may have missed a period. Some of the most common factors are:\n 
+^ - If you are taking medication or birth control 
+^ - If you have had a lot of stress recently  
+^ - If you are pregnant  
+^ - If you have lost a lot of weight 
+^ - If you are not eating enough  
+^ - Hormonal changes 
+^ - Underlying health conditions\n 
+^If you are sexually active, it is advised that you take a pregnancy test when you notice you have missed your period. However, there is no way of knowing the cause of missed periods without seeking professional medical help. So, we advise booking an appointment with your GP to discuss any concerns you have about a missed period. 
+
++ do periods hurt
+- Periods can hurt. It is very common to experience cramps in your stomach and back, as well as potentially in your thighs or around your bum. The intensity of these pains may vary from person to person and period to period.\n 
+^To relieve these pains you may want to try lying down, using a hot water bottle, taking painkillers, and drinking soothing teas like Raspberry leaf. You may also experience symptoms in the days leading up to a period for example tenderness and sensitivity in your breasts, headaches, fatigue, sensitivity in mood and cramping.\n 
+^However, if you are experiencing extreme and uncomfortable pains do you do not regularly experience or that seem overly intense, you should contact your doctor to rule out conditions like endometriosis and PCOS. 
+
++ can i swim on my period
+- Yes, you can swim on your period! However, you should use a tampon or menstrual cup unless your flow is very light. 
 
 + *
 - I am sorry, I didn't get that. Do you wanna talk about something other than periods?
@@ -66,7 +113,13 @@ I see, what do you wanna know about period poverty? {topic=periodpoverty}
 ^ - Birth control
 ^ - Sexual health
 ^ - Period poverty
-* <star> == no => Okay, if you want to know more about periods try asking one of these questions:
+* <star> == no => Okay, if you want to know more about periods try asking one of these questions:\n
+^What is a period?\n
+^What happens on a period?\n
+^Why have i missed a period?\n 
+^Do periods hurt?\n
+^Can I swim on my period?\n
+^ What is period poverty?\n
 - Please answer with yes or no.
 
 + *
@@ -76,7 +129,7 @@ I see, what do you wanna know about period poverty? {topic=periodpoverty}
 * <star> == tampons => Let me send you to Tammy! {topic=tampons} 
 * <star> == birth control => birth control {topic=birthcontrol}
 * <star> == sexual health => Let me send you to Connie{topic=sexualhealth}
-* <star> == period poverty => Let me send you back to Olive. {topic=periodpoverty} 
+* <star> == period poverty => I see, what do you wanna know about period poverty? {topic=periodpoverty} <call>changebackground Olive.png</call>
 - Please respond with one of these options:\n
 ^ - Tampons
 ^ - Pads
@@ -403,7 +456,7 @@ I see, what do you wanna know about period poverty? {topic=periodpoverty}
 % thats fine what do you want to talk about instead here are some options tampons pads menstrual cups periods birth control sexual health
 * <star> == tampons => Let me send you to Tammy! {topic=tampons} 
 * <star> == pads => Let me send you to Patty. {topic=pads} 
-* <star> == periods => Let me send you back to Olive. {topic=periods} 
+* <star> == periods => Okay girl, what do you wanna know about periods? {topic=periods} 
 * <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} 
 * <star> == birth control => birth control {topic=birthcontrol}
 * <star> == sexual health => Let me send you to Connie{topic=sexualhealth}
