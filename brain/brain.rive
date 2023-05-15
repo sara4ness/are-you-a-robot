@@ -2,7 +2,7 @@
 
 ! local concat = newline
 
-+ (hi|hello|hey)
++ (hi|hello|hey|yo)
 - Hi, my name is Olive, I am an ovarie.\n
 ^ I am here to talk to you about:
 ^ - Periods
