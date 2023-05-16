@@ -23,11 +23,11 @@
 
 + *
 * <star> == sanitary products => Do you want to talk about pads, tampons or menstrual cups?
-* <star> == birth control => Hii, I am Ivy. I am here to tell you everything about birth control. So, what do you want to know? {topic=birthcontrol}
-* <star> == sexual health => Yoo, Connie here. I heard you wanted to know some more about sexual health. What can I tell you about it?{topic=sexualhealth}
-* <star> == (period|periods) => Okay girl, what do you wanna know about periods?{topic=periods} <call>changebackground Olive.png</call>
-* <star> == period poverty => I see, what do you wanna know about period poverty?{topic=periodpoverty} <call>changebackground Olive.png</call>
-- Please pick one of these topics:\n 
+* <star> == birth control => Hii, I am Ivy. I am here to tell you everything about birth control. So, what do you want to know? {topic=birthcontrol} <call>changebackground png/ivy.png</call>
+* <star> == sexual health => Yoo, Connie here. I heard you wanted to know some more about sexual health. What can I tell you about it?{topic=sexualhealth} <call>changebackground png/connie.png</call>
+* <star> == (period|periods) => Okay girl, what do you wanna know about periods?{topic=periods} <call>changebackground png/olive.png</call>
+* <star> == period poverty => I see, what do you wanna know about period poverty?{topic=periods} <call>changebackground png/olive.png</call>
+- I am sorry, I didn't understand you. Here are some topics you can ask me about:\n 
 ^ - Periods
 ^ - Sanitary products
 ^ - Birth control
@@ -37,22 +37,25 @@
 ! local concat = none
 
 + [*] birth control [*]
-- Hi there, I am Ivy. I am here to tell you everything about birth control. So, what do you want to know? {topic=birthcontrol}
+- Hi there, I am Ivy. I am here to tell you everything about birth control. So, what do you want to know? {topic=birthcontrol} <call>changebackground png/ivy.png</call>
 
 + [*] (tampon|tampons) [*]
-- Heeey, girl! My name is Tammy the tampon. I am here to answer all the questions you have about tampons. What do you wanna know? {topic=tampons}
+- Heeey, girl! My name is Tammy the tampon. I am here to answer all the questions you have about tampons. What do you wanna know? {topic=tampons} <call>changebackground png/tammy.png</call>
+
++ [*] (pad|pads) [*]
+- Hi, I am Patty. I am here to talk to you about everything pad related. What do you wanna know? {topic=pads} <call>changebackground png/paddy.png</call>
 
 + [*] menstrual (cup|cups) [*]
-- Okay girl, what do you wanna know about menstrual cups?{topic=menstrualcups}
+- Okay girl, what do you wanna know about menstrual cups?{topic=menstrualcups} <call>changebackground png/cuppie.png</call>
 
 + [*] sexual health [*]
-- Yoo, Connie here. I heard you wanted to know some more about sexual health. What can I tell you about it? {topic=sexualhealth}
+- Yoo, Connie here. I heard you wanted to know some more about sexual health. What can I tell you about it? {topic=sexualhealth} <call>changebackground png/connie.png</call>
 
 + [*] (period|periods) [*]
-- Okay girl, what do you wanna know about periods? {topic=periods} <call>changebackground Olive.png</call>
+- Okay girl, what do you wanna know about periods? {topic=periods} <call>changebackground png/olive.png</call>
 
 + [*] period poverty [*]
-I see, what do you wanna know about period poverty? {topic=periodpoverty} <call>changebackground Olive.png</call>
+I see, what do you wanna know about period poverty? {topic=periods} <call>changebackground png/olive.png</call>
 
 
 
@@ -61,7 +64,7 @@ I see, what do you wanna know about period poverty? {topic=periodpoverty} <call>
 ! local concat = newline
 
 + (hi|hello|hey)
-- Hi, my name is Olive, I am an ovarie. What do you wanna know about periods?
+- Hi, my name is Olive, I am an ovarie. What do you wanna know about periods? <call>changebackground png/olive.png</call>
 
 + what is [a] (period|periods)
 - A period is part of the natural menstrual cycle. It's when the lining of your uterus sheds, leading to blood and tissue coming out of your vagina. A period will usually last anywhere from 2-7 days but will vary for everyone!\n 
@@ -80,7 +83,7 @@ I see, what do you wanna know about period poverty? {topic=periodpoverty} <call>
 ^ - You can request free period products here: <a href="https://www.freedom4girls.co.uk/request-products/ ">www.freedom4girls.co.uk</a>\n
 ^ - You can also contact your local council to see where they are currently providing free products here: <a href="https://www.mygov.scot/free-period-products ">Rwww.mygov.scot/free-period-products</a>\n
 ^ - If you are currently a student in a state maintained school, or a 16 to 19 education organisation in England, your place of study is required to provide free sanitary products upon request under the government period product scheme. Just ask a member of staff!\n
-^ - You can also download the Pickupmyperiod app In the app store to find period products available in the area! 
+^ - You can also download the Pickupmyperiod app in App Store to find period products available in the area! 
 
 + why have i missed (a period|my period)
 - Periods are a natural part of our body's menstrual cycle, and although on average a cycle last 28 days, it may vary from person to person or month to month, so your period may be slightly later or earlier each time. This is usually nothing to be worried about. There are many reasons why you may have missed a period. Some of the most common factors are:\n 
@@ -124,12 +127,12 @@ I see, what do you wanna know about period poverty? {topic=periodpoverty} <call>
 
 + *
 % thats fine what do you want to talk about instead here are some options tampons pads menstrual cups birth control sexual health period poverty
-* <star> == pads => Let me send you to Patty. {topic=pads} 
-* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} 
-* <star> == tampons => Let me send you to Tammy! {topic=tampons} 
-* <star> == birth control => birth control {topic=birthcontrol}
-* <star> == sexual health => Let me send you to Connie{topic=sexualhealth}
-* <star> == period poverty => I see, what do you wanna know about period poverty? {topic=periodpoverty} <call>changebackground Olive.png</call>
+* <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
+* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
+* <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
+* <star> == birth control => birth control {topic=birthcontrol} <call>changebackground png/ivy.png</call>
+* <star> == sexual health => Let me send you to Connie{topic=sexualhealth} <call>changebackground png/connie.png</call>
+* <star> == period poverty => I see, what do you wanna know about period poverty? {topic=periodpoverty} <call>changebackground png/olive.png</call>
 - Please respond with one of these options:\n
 ^ - Tampons
 ^ - Pads
@@ -146,7 +149,7 @@ I see, what do you wanna know about period poverty? {topic=periodpoverty} <call>
 
 > topic tampons
 + [*] (hi|hello|hey|tammy) [*]
-- Hi, I am Tammy. I am here to talk to you about everything tampon related. What do you wanna know?
+- Hi, I am Tammy. I am here to talk to you about everything tampon related. What do you wanna know? <call>changebackground png/tammy.png</call>
 
 + what [*] (tampon|tampons)
 - A tampon is a sanitary product usually made of cotton. Tampons are inserted into the vaginal canal to absorb the blood.
@@ -167,7 +170,7 @@ I see, what do you wanna know about period poverty? {topic=periodpoverty} <call>
 - Yes or no would be the best answer.
 
 + [*](pad|pads)[*]
-- Let me send you to Patty. {topic=pads} 
+- Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
 
 + *
 - I am sorry, I didn't get that. Do you wanna talk about something other than tampons?
@@ -186,12 +189,12 @@ I see, what do you wanna know about period poverty? {topic=periodpoverty} <call>
 
 + *
 % thats fine what do you want to talk about instead here are some options pads menstrual cups periods birth control sexual health period poverty
-* <star> == pads => Let me send you to Patty. {topic=pads} 
-* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} 
-* <star> == periods => Let me send you back to Olive. {topic=periods} 
-* <star> == birth control => birth control {topic=birthcontrol}
-* <star> == sexual health => Let me send you to Connie{topic=sexualhealth}
-* <star> == period poverty => Let me send you back to Olive. {topic=periodpoverty} 
+* <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
+* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
+* <star> == periods => Let me send you back to Olive. {topic=periods} <call>changebackground png/olive.png</call>
+* <star> == birth control => birth control {topic=birthcontrol} <call>changebackground png/ivy.png</call>
+* <star> == sexual health => Let me send you to Connie{topic=sexualhealth} <call>changebackground png/connie.png</call>
+* <star> == period poverty => Let me send you back to Olive. {topic=periodpoverty} <call>changebackground png/olive.png</call>
 - Please respond with one of these options:\n
 ^ - Pads
 ^ - Menstrual cups
@@ -206,8 +209,6 @@ I see, what do you wanna know about period poverty? {topic=periodpoverty} <call>
 
 
 
-+ [*] (pad|pads) [*]
-- Hi, I am Patty. I am here to talk to you about everything pad related. What do you wanna know? {topic=pads}
 
 > topic pads
 ! local concat = newline
@@ -238,12 +239,12 @@ I see, what do you wanna know about period poverty? {topic=periodpoverty} <call>
 
 + *
 % thats fine what do you want to talk about instead here are some options tampons menstrual cups periods birth control sexual health period poverty
-* <star> == tampons => Let me send you to Tammy! {topic=tampons} 
-* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} 
-* <star> == periods => Let me send you back to Olive. {topic=periods} 
-* <star> == birth control => birth control {topic=birthcontrol}
-* <star> == sexual health => Let me send you to Connie{topic=sexualhealth}
-* <star> == period poverty => Let me send you back to Olive. {topic=periodpoverty} 
+* <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
+* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
+* <star> == periods => Let me send you back to Olive. {topic=periods} <call>changebackground png/olive.png</call>
+* <star> == birth control => birth control {topic=birthcontrol} <call>changebackground png/ivy.png</call>
+* <star> == sexual health => Let me send you to Connie{topic=sexualhealth} <call>changebackground png/connie.png</call>
+* <star> == period poverty => Let me send you back to Olive. {topic=periodpoverty} <call>changebackground png/olive.png</call>
 - Please respond with one of these options:\n
 ^ - Tampons
 ^ - Menstrual cups
@@ -253,7 +254,7 @@ I see, what do you wanna know about period poverty? {topic=periodpoverty} <call>
 ^ - Period poverty
 
 + [*](tampon|tamponss)[*]
-- Let me send you to Tammy! {topic=tampons} 
+- Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
 
 ! local concat = none
 
@@ -266,10 +267,10 @@ I see, what do you wanna know about period poverty? {topic=periodpoverty} <call>
 ! local concat = newline
 
 + [*](pad|pads)[*]
-- Let me send you to Patty. {topic=pads} 
+- Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
 
 + [*](tampon|tamponss)[*]
-- Let me send you to Tammy! {topic=tampons} 
+- Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
 
 + *
 - I am sorry, I didn't get that. Do you wanna talk about something other than menstrual cups?
@@ -288,12 +289,12 @@ I see, what do you wanna know about period poverty? {topic=periodpoverty} <call>
 
 + *
 % thats fine what do you want to talk about instead here are some options tampons pads periods birth control sexual health period poverty
-* <star> == tampons => Let me send you to Tammy! {topic=tampons} 
-* <star> == pads => Let me send you to Patty. {topic=pads} 
-* <star> == periods => Let me send you back to Olive. {topic=periods} 
-* <star> == birth control => birth control {topic=birthcontrol}
-* <star> == sexual health => Let me send you to Connie{topic=sexualhealth}
-* <star> == period poverty => Let me send you back to Olive. {topic=periodpoverty} 
+* <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
+* <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
+* <star> == periods => Let me send you back to Olive. {topic=periods} <call>changebackground png/olive.png</call>
+* <star> == birth control => birth control {topic=birthcontrol} <call>changebackground png/ivy.png</call>
+* <star> == sexual health => Let me send you to Connie{topic=sexualhealth} <call>changebackground png/connie.png</call>
+* <star> == period poverty => Let me send you back to Olive. {topic=periodpoverty} <call>changebackground png/olive.png</call>
 - Please respond with one of these options:\n
 ^ - Tampons
 ^ - Pads
@@ -346,12 +347,12 @@ I see, what do you wanna know about period poverty? {topic=periodpoverty} <call>
 
 + *
 % thats fine what do you want to talk about instead here are some options tampons pads menstrual cups periods sexual health period poverty
-* <star> == tampons => Let me send you to Tammy! {topic=tampons} 
-* <star> == pads => Let me send you to Patty. {topic=pads} 
-* <star> == periods => Let me send you back to Olive. {topic=periods} 
-* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} 
-* <star> == sexual health => Let me send you to Connie{topic=sexualhealth}
-* <star> == period poverty => Let me send you back to Olive. {topic=periodpoverty} 
+* <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
+* <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
+* <star> == periods => Let me send you back to Olive. {topic=periods} <call>changebackground png/olive.png</call>
+* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
+* <star> == sexual health => Let me send you to Connie{topic=sexualhealth} <call>changebackground png/connie.png</call>
+* <star> == period poverty => Let me send you back to Olive. {topic=periodpoverty} <call>changebackground png/olive.png</call>
 - Please respond with one of these options:\n
 ^ - Tampons
 ^ - Pads
@@ -405,12 +406,12 @@ I see, what do you wanna know about period poverty? {topic=periodpoverty} <call>
 
 + *
 % thats fine what do you want to talk about instead here are some options tampons pads menstrual cups periods birth control period poverty
-* <star> == tampons => Let me send you to Tammy! {topic=tampons} 
-* <star> == pads => Let me send you to Patty. {topic=pads} 
-* <star> == periods => Let me send you back to Olive. {topic=periods} 
-* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} 
-* <star> == birth control => birth control {topic=birthcontrol}
-* <star> == period poverty => Let me send you back to Olive. {topic=periodpoverty} 
+* <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
+* <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
+* <star> == periods => Let me send you back to Olive. {topic=periods} <call>changebackground png/olive.png</call>
+* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
+* <star> == birth control => birth control {topic=birthcontrol} <call>changebackground png/ivy.png</call>
+* <star> == period poverty => Let me send you back to Olive. {topic=periodpoverty}<call>changebackground png/olive.png</call>
 - Please respond with one of these options:\n
 ^ - Tampons
 ^ - Pads
@@ -454,12 +455,12 @@ I see, what do you wanna know about period poverty? {topic=periodpoverty} <call>
 
 + *
 % thats fine what do you want to talk about instead here are some options tampons pads menstrual cups periods birth control sexual health
-* <star> == tampons => Let me send you to Tammy! {topic=tampons} 
-* <star> == pads => Let me send you to Patty. {topic=pads} 
-* <star> == periods => Okay girl, what do you wanna know about periods? {topic=periods} 
-* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} 
-* <star> == birth control => birth control {topic=birthcontrol}
-* <star> == sexual health => Let me send you to Connie{topic=sexualhealth}
+* <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
+* <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
+* <star> == periods => Okay girl, what do you wanna know about periods? {topic=periods} <call>changebackground png/olive.png</call>
+* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
+* <star> == birth control => birth control {topic=birthcontrol} <call>changebackground png/ivy.png</call>
+* <star> == sexual health => Let me send you to Connie{topic=sexualhealth} <call>changebackground png/connie.png</call>
 - Please respond with one of these options:\n
 ^ - Tampons
 ^ - Pads
@@ -474,8 +475,18 @@ I see, what do you wanna know about period poverty? {topic=periodpoverty} <call>
 
 
 
-+ *
-- Sorry did not get what you said
-- I am afraid that I can not understand you
-- Sorry can you please elaborate that for me
-- I don't get it!
+// + *
+// - Sorry did not get what you said
+// - I am afraid that I can not understand you
+// - Sorry can you please elaborate that for me
+// - I don't get it!
+
+
+// + *
+// - I am sorry, I didn't understand you. Here are some topics you can ask me about:\n
+// ^ - Periods
+// ^ - Sanitary products
+// ^ - Birth control
+// ^ - Sexual health
+// ^ - Period poverty\n
+// ^ If you want to learn more about one of these topics just respond with the topic you wanna talk about.
