@@ -16,8 +16,7 @@
 ^ - Periods
 ^ - Sanitary products
 ^ - Birth control
-^ - Sexual health
-^ - Period poverty\n
+^ - Sexual health\n
 ^ If you want to learn more about one of these topics just respond with the topic you wanna talk about.
 // ^ <call>changebackground Olive.png</call>
 
@@ -32,7 +31,6 @@
 ^ - Sanitary products
 ^ - Birth control
 ^ - Sexual health
-^ - Period poverty
 
 ! local concat = none
 
@@ -53,9 +51,6 @@
 
 + [*] (period|periods) [*]
 - Okay girl, what do you wanna know about periods? {topic=periods} <call>changebackground png/olive.png</call>
-
-+ [*] period poverty [*]
-I see, what do you wanna know about period poverty? {topic=periods} <call>changebackground png/olive.png</call>
 
 
 
