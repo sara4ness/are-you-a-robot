@@ -190,12 +190,19 @@
 // ^<a href="https://tampax.com/en-us/tampon-truths/how-to-insert-a-tampon/">Read more here.</a>\n 
 // ^Do you also want to know how to take out a tampon?
 
-// + *
-// % it is important to wash your hands before and after inserting a tampondepending on what brand you use you simply take off the packaging and use a finger to push it up the vaginal canal some tampons also have an applicator in that case you place this to the vagnial canal and press the tampon outyou should not be able to feel the tampon inside of you if you do you might have inserted it wrongdo you also want to know how to take out a tampon
-// * <star> == yes => To remove a tampon you simply pull the string.\n
-// ^Remeber to always wash your hands before and after removing a tampon.
-// * <star> == no => Okay
-// - Yes or no would be the best answer.
++ *
+% using a tampon for the first time can be daunting but dont worry its not as scary as it looksthe most important step while inserting a tampon for the first time is to relax as stressing yourself out can lead to your vaginal muscles tightening making it even harder once relaxed follow these simple steps1 get yourself in position spread your legs and find a position comfortable for you2 once you have opened the tampon hold it with one hand at the indentation and angle the tampon towards you3 now slowly and carefully begin to insert the tampon inside your vagina until you reach the indentations4 now slowly push the lower applicator section towards you until the lower section meets your fingers and the indentation5 if tampons feels uncomfortable after inserting it take it out and try again dont worry if you dont get it the first timefor a more detailed step by step guide on how to insert different types of tampons a hrefhttpsflohealthmenstrualcyclelifestylehygieneandbeautyhowtoinsertatamponplease read more hereado you also want to know how to take out a tampon
+* <star> == yes => To remove a tampon you simply pull the string.\n
+^Remeber to always wash your hands before and after removing a tampon.
+* <star> == no => Okay, cool.
+- Yes or no would be the best answer.
+
++ *
+%yes or no would be the best answer
+* <star> == yes => To remove a tampon you simply pull the string.\n
+^Remeber to always wash your hands before and after removing a tampon.
+* <star> == no => Okay, cool.
+- Yes or no would be the best answer.
 
 + should i be using a tampon
 - You should never feel pressure to use tampons or any other sanitary products. There is no correct product to be using when on your period and you should only be using products, you're comfortable with and that work best for your body and your needs. Tampons are easy and practical product which allows you to wear them for longer than other alternatives. If you are having a hard time using a tampon or are concerned about trying it may be useful to start with a much smaller size and change it more regularly working your way up to the larger heavier flow options.\n
@@ -209,6 +216,7 @@
 ^4 – now slowly push the lower applicator section towards you until the lower section meets your fingers and the indentation.\n
 ^5 – if tampons feels uncomfortable after inserting it take it out and try again, don’t worry if you don’t get it the first time!\n 
 ^For a more detailed step by step guide on how to insert different types of tampons, <a href="https://flo.health/menstrual-cycle/lifestyle/hygiene-and-beauty/how-to-insert-a-tampon">please read more here.</a>\n 
+^Do you also want to know how to take out a tampon?
 
 + how often should i change my tampon
 - You should change your tampon every 4-8 hours, or when you feel it can no longer absorb more blood, whichever comes first. If you are not sure if it is time to change your tampon within this time bracket, you can simply check when in the toilet by gently tugging on the removal string. If it feels stiff and uncomfortable to remove you could probably leave it in for longer however do not exceed the 8 hours.
@@ -269,7 +277,7 @@
 % thats fine what do you want to talk about instead here are some options pads menstrual cups periods birth control sexual health
 * <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
 * <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
-* <star> == periods => Let me send you back to Olive. {topic=periods} <call>changebackground png/olive.png</call>
+* <star> == periods => Let me send you back to Ottie. {topic=periods} <call>changebackground png/olive.png</call>
 * <star> == birth control => Let me send you to Ivy. {topic=birthcontrol} <call>changebackground png/ivy.png</call>
 * <star> == sexual health => Let me send you to Connie. {topic=sexualhealth} <call>changebackground png/connie.png</call>
 - Please respond with one of these options:\n
@@ -349,7 +357,7 @@
 % thats fine what do you want to talk about instead here are some options tampons menstrual cups periods birth control sexual health
 * <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
 * <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
-* <star> == periods => Let me send you back to Olive. {topic=periods} <call>changebackground png/olive.png</call>
+* <star> == periods => Let me send you back to Ottie. {topic=periods} <call>changebackground png/olive.png</call>
 * <star> == birth control => Let me send you to Ivy. {topic=birthcontrol} <call>changebackground png/ivy.png</call>
 * <star> == sexual health => Let me send you to Connie. {topic=sexualhealth} <call>changebackground png/connie.png</call>
 - Please respond with one of these options:\n
@@ -440,7 +448,7 @@
 % thats fine what do you want to talk about instead here are some options tampons pads periods birth control sexual health
 * <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
 * <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
-* <star> == periods => Let me send you back to Olive. {topic=periods} <call>changebackground png/olive.png</call>
+* <star> == periods => Let me send you back to Ottie. {topic=periods} <call>changebackground png/olive.png</call>
 * <star> == birth control => Let me send you to Ivy. {topic=birthcontrol} <call>changebackground png/ivy.png</call>
 * <star> == sexual health => Let me send you to Connie. {topic=sexualhealth} <call>changebackground png/connie.png</call>
 - Please respond with one of these options:\n
@@ -573,7 +581,7 @@
 % thats fine what do you want to talk about instead here are some options tampons pads menstrual cups periods sexual health
 * <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
 * <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
-* <star> == periods => Let me send you back to Olive. {topic=periods} <call>changebackground png/olive.png</call>
+* <star> == periods => Let me send you back to Ottie. {topic=periods} <call>changebackground png/olive.png</call>
 * <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
 * <star> == sexual health => Let me send you to Connie. {topic=sexualhealth} <call>changebackground png/connie.png</call>
 - Please respond with one of these options:\n
