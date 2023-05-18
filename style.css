@@ -8,9 +8,10 @@
 }
 
 body {
-  background-image: url(png/olive.png)
+  background-image: url(png/olive.png);
   /* background-size: cover; */
   /* background-color: rgb(255, 213, 213); */
+  background-position: right;
 }
 
 .title {

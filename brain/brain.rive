@@ -14,6 +14,7 @@
 - Hi, my name is Olive, I am an ovarie.\n
 ^ I am here to talk to you about:
 ^ - Periods
+^ - Period poverty
 ^ - Sanitary products
 ^ - Birth control
 ^ - Sexual health\n
@@ -27,6 +28,7 @@
 * <star> == period poverty => I see, what do you wanna know about period poverty?{topic=periods} <call>changebackground png/olive.png</call>
 - I am sorry, I didn't understand you. Here are some topics you can ask me about:\n 
 ^ - Periods
+^ - Period poverty
 ^ - Sanitary products
 ^ - Birth control
 ^ - Sexual health
@@ -49,7 +51,7 @@
 - Yoo, Connie here. I heard you wanted to know some more about sexual health. What can I tell you about it? {topic=sexualhealth} <call>changebackground png/connie.png</call>
 
 + [*] (period|periods) [*]
-- Okay girl, what do you wanna know about periods? {topic=periods} <call>changebackground png/olive.png</call>
+- Okay girl, so what do you wanna know about periods? {topic=periods} <call>changebackground png/olive.png</call>
 
 
 
@@ -72,7 +74,7 @@
 ^Although period poverty is still a devastating issue, there are now organisations trying to combat this limited access to necessities.\n 
 ^If you are currently struggling with period poverty, I am happy to provide additional information about where you can access support, just ask "How can I access free sanitary products?" 
 
-+ how can i access free sanitary products
++ how can i access (free sanitary products|sanitary products)
 - If you are in need of period poverty support or access to free sanitary products, here are a few options available for you:\n  
 ^ - You can request free period products here: <a href="https://www.freedom4girls.co.uk/request-products/ ">www.freedom4girls.co.uk</a>\n
 ^ - You can also contact your local council to see where they are currently providing free products here: <a href="https://www.mygov.scot/free-period-products ">Rwww.mygov.scot/free-period-products</a>\n
@@ -89,6 +91,18 @@
 ^ - Hormonal changes 
 ^ - Underlying health conditions\n 
 ^If you are sexually active, it is advised that you take a pregnancy test when you notice you have missed your period. However, there is no way of knowing the cause of missed periods without seeking professional medical help. So, we advise booking an appointment with your GP to discuss any concerns you have about a missed period. 
+
++ what happens if i miss (a period|my period)
+- Periods are a natural part of our body's menstrual cycle, and although on average a cycle last 28 days, it may vary from person to person or month to month, so your period may be slightly later or earlier each time. This is usually nothing to be worried about. There are many reasons why you may have missed a period. Some of the most common factors are:\n 
+^ - If you are taking medication or birth control 
+^ - If you have had a lot of stress recently  
+^ - If you are pregnant  
+^ - If you have lost a lot of weight 
+^ - If you are not eating enough  
+^ - Hormonal changes 
+^ - Underlying health conditions\n 
+^ - If you are sexually active, it is advised that you take a pregnancy test when you notce you have missed a period. However, there is no way of knowing the cause of missed periods without seeking professional medical help. So, we advise booking an appointment with your GP to discuss any concerns you have about a missed period
+
 
 + do periods hurt
 - Periods can hurt. It is very common to experience cramps in your stomach and back, as well as potentially in your thighs or around your bum. The intensity of these pains may vary from person to person and period to period.\n 
@@ -211,10 +225,10 @@
 - Hi, I am Patty. I am here to talk to you about everything pad related. What do you wanna know?
 
 + what [*] (pad|pads)
-- A pad is a sanitary product usually made of cotton. 
+- A pad is made of absorbent material such as cotton that sticks to your underwear to collect period fuild. They can come in a variety of sizes to suit your flow and comfort!
 
 + how [*] (pad|pads)
-- It is important to wash your hands before and after using a pad!\n
+- Don’t worry, it’s super easy! Pads are external, so all you have to do is stick it onto your underwear making sure you centre it according to where your flow goes! If your pad has wings, simply fold them over on each side 😊 \n
 
 + *
 - I am sorry, I didn't get that. Do you wanna talk about something other than pads?
@@ -313,15 +327,26 @@
 ^You should always discuss any concerns you may be having surrounding your period with your GP or a trusted health care professional.\n  
 ^For more information about using the pill to regulate your period <a href="https://flo.health/menstrual-cycle/health/period/using-the-pill-to-regulate-periods ">click here</a>
 
+<<<<<<< HEAD
++ what [birth control is] right [for me]
+- There are many different types of birth control available in the UK, which one is right for you is unique to your body and your needs! You may also need to try a few different birth controls until you find what's right for you, to do this speak with a healthcare professional such as your GP.\n 
+^A few of the more popular options available to you are:\n 
+=======
 + what [birth control] [is] right [for me]
 - There are many different types of birth control available in the UK, which one is right for you is unique to your body and your needs! You may also need to try a few different birth controls until you find what's right for you, to do this speak with a healthcare professional such as your GP. \n 
 ^A few of the more popular options available are:\n 
+>>>>>>> f530a38481ec9572e16326607c07d5ffd593780c
 ^ - The contraceptive pill
 ^ - The implant
 ^ - The injection
 ^ - The IUD\n
+<<<<<<< HEAD
+^However, not every available option is suited to each individual, due to different hormonal requirements. A history of blood clots in the family may also limit the types of birth control available for you.  
+^For more information about which bucket role is right for you consider reading the following article provided by the:\n
+=======
 ^However, not every available option is suited to each individual, due to different hormonal requirements. A history of blood clots in the family may also limit the types of birth control available for you.\n
 ^For more information about which birth control is right for you consider reading the following article provided by the NHS:\n
+>>>>>>> f530a38481ec9572e16326607c07d5ffd593780c
 ^<a href="https://www.nhs.uk/conditions/contraception/which-method-suits-me/?tabname=methods-of-contraception">Read more here.</a>\n
 ^Please note, the best way to figure out what contraceptive method would work best for you is by discussing it with a healthcare professional, I recommend contacting your doctor or if you do not want to contact your family GP directly find your nearest sexual health clinic for advice!  
 
@@ -337,6 +362,7 @@
 ^ - Cervical Cap\n
 ^If you are interested in what none hormonal birth control method best suits you, contact a GP, or another qualified health professional, such as a sexual health clinic.
 
+<<<<<<< HEAD
 + what is the pill
 - The pill is a small contraceptive pill you take orally on a daily basis to protect yourself from pregnancy. However, it is also used to help regulate periods and hormones! The pill commonly comes in two forms: the combined pill which contains oestrogen and progesterone, or the oestrogen-only pill.
 
@@ -374,6 +400,9 @@
 + does birth control protect against stis
 - Although birth control such as the pill, patch, ring, and IUD are very effective at preventing pregnancy, they do not protect against STIs and HIV. The only form of contraception that also protects against STIs is condoms, for example, the male external condoms or the female vaginal condom. However, The most reliable way to avoid STDs is to not have vaginal, anal, or oral sex. 
 
+=======
++ 
+>>>>>>> cd32d28e9509b2bb46721302979f56bf78bb743f
 + *
 - I am sorry, I didn't get that. Do you wanna talk about something other than birth control?
 
