@@ -175,7 +175,6 @@
 ^If tampons feels uncomfortable after inserting it take it out and try again, don’t worry if you don’t get it the first time!\n 
 ^For more information, Here is the perfect step by step guide provided by our friends at Tampax!
 ^<a href="https://tampax.com/en-us/tampon-truths/how-to-insert-a-tampon/">Read more here.</a>\n 
-
 ^Do you also want to know how to take out a tampon?
 
 + *
@@ -474,10 +473,10 @@
 % thats fine what do you want to talk about instead here are some options tampons pads menstrual cups periods birth control period poverty
 * <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
 * <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
-* <star> == periods => Let me send you back to Olive. {topic=periods} <call>changebackground png/olive.png</call>
+* <star> == periods => Let me send you back to Ottie. {topic=periods} <call>changebackground png/olive.png</call>
 * <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
 * <star> == birth control => birth control {topic=birthcontrol} <call>changebackground png/ivy.png</call>
-* <star> == period poverty => Let me send you back to Olive. {topic=periodpoverty}<call>changebackground png/olive.png</call>
+* <star> == period poverty => Let me send you back to Ottie. {topic=periodpoverty}<call>changebackground png/olive.png</call>
 - Please respond with one of these options:\n
 ^ - Tampons
 ^ - Pads
@@ -496,7 +495,7 @@
 
 ! local concat = newline
 
-+ [*] (hi|hello|hey|olive) [*]
++ [*] (hi|hello|hey|Ottie) [*]
 - What do you wanna know about period poverty?
 
 - Hi, I am Patty. I am here to talk to you about everything pad related. What do you wanna know?
