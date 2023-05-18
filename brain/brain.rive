@@ -4,15 +4,15 @@
 
     const body = document.querySelector("body");
     body.style.background = `url(${args[0]})`
-    body.style.background.position = right;
+    body.style.backgroundPosition = 'right'
     return ""
 
 < object
 
 ! local concat = newline
 
-+ (hi|hello|hey|yo)
-- Hi, my name is Olive, I am an ovarie.\n
++ (hi|hello|hey|yo|hey queen)
+- Hi, my name is Ottie, I am an ovarie.\n
 ^ I am here to talk to you about:
 ^ - Periods
 ^ - Period poverty
@@ -61,7 +61,7 @@
 ! local concat = newline
 
 + (hi|hello|hey)
-- Hi, my name is Olive, I am an ovarie. What do you wanna know about periods? <call>changebackground png/olive.png</call>
+- Hi, my name is Ottie, I am an ovarie. What do you wanna know about periods? <call>changebackground png/olive.png</call>
 
 + what is [a] (period|periods)
 - A period is part of the natural menstrual cycle. It's when the lining of your uterus sheds, leading to blood and tissue coming out of your vagina. A period will usually last anywhere from 2-7 days but will vary for everyone!\n 
@@ -166,9 +166,15 @@
 ! local concat = newline
 
 + how [*] (tampon|tampons)
-- It is important to wash your hands before and after inserting a tampon!\n
-^Depending on what brand you use, you simply take off the packaging and use a finger to push it up the vaginal canal. Some tampons also have an applicator, in that case you place this to the vagnial canal and press the tampon out.\n
-^You should not be able to feel the tampon inside of you. If you do, you might have inserted it wrong.\n
+- Using a tampon for the first time can be daunting, but don’t worry, it’s not as scary as it looks! The most important step while inserting a tampon for the first time is to relax, as stressing yourself out can lead to your vaginal muscles tightening, making it even harder! Once relaxed, follow these simple steps: \n
+^First, get yourself in position comfortable for you, try spreading your legs apart or resting one leg higher up!\n
+^Depending on what brand you use, you start by simply take off the packaging. Some tampons also have an applicator whereas others are just the cotton tampon.\n
+^Once you have opened the tampon hold it with one hand at the indentations near the bottom and angle the tampon towards you.\n
+^Now slowly and carefully begin to insert the tampon inside your vagina until you reach the indentations.\n
+^Now slowly push the lower applicator section towards you until the lower section meets your fingers.\n 
+^If tampons feels uncomfortable after inserting it take it out and try again, don’t worry if you don’t get it the first time!\n 
+^For more information, Here is the perfect step by step guide provided by our friends at Tampax!
+^<a href="https://tampax.com/en-us/tampon-truths/how-to-insert-a-tampon/">Read more here.</a>\n 
 ^Do you also want to know how to take out a tampon?
 
 + *
@@ -467,10 +473,10 @@
 % thats fine what do you want to talk about instead here are some options tampons pads menstrual cups periods birth control period poverty
 * <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
 * <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
-* <star> == periods => Let me send you back to Olive. {topic=periods} <call>changebackground png/olive.png</call>
+* <star> == periods => Let me send you back to Ottie. {topic=periods} <call>changebackground png/olive.png</call>
 * <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
 * <star> == birth control => birth control {topic=birthcontrol} <call>changebackground png/ivy.png</call>
-* <star> == period poverty => Let me send you back to Olive. {topic=periodpoverty}<call>changebackground png/olive.png</call>
+* <star> == period poverty => Let me send you back to Ottie. {topic=periodpoverty}<call>changebackground png/olive.png</call>
 - Please respond with one of these options:\n
 ^ - Tampons
 ^ - Pads
@@ -489,7 +495,7 @@
 
 ! local concat = newline
 
-+ [*] (hi|hello|hey|olive) [*]
++ [*] (hi|hello|hey|Ottie) [*]
 - What do you wanna know about period poverty?
 
 - Hi, I am Patty. I am here to talk to you about everything pad related. What do you wanna know?
