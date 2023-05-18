@@ -14,6 +14,7 @@
 - Hi, my name is Olive, I am an ovarie.\n
 ^ I am here to talk to you about:
 ^ - Periods
+^ - Period poverty
 ^ - Sanitary products
 ^ - Birth control
 ^ - Sexual health\n
@@ -28,6 +29,7 @@
 * <star> == period poverty => I see, what do you wanna know about period poverty?{topic=periods} <call>changebackground png/olive.png</call>
 - I am sorry, I didn't understand you. Here are some topics you can ask me about:\n 
 ^ - Periods
+^ - Period poverty
 ^ - Sanitary products
 ^ - Birth control
 ^ - Sexual health
@@ -73,7 +75,7 @@
 ^Although period poverty is still a devastating issue, there are now organisations trying to combat this limited access to necessities.\n 
 ^If you are currently struggling with period poverty, I am happy to provide additional information about where you can access support, just ask "How can I access free sanitary products?" 
 
-+ how can i access free sanitary products
++ how can i access (free sanitary products|sanitary products)
 - If you are in need of period poverty support or access to free sanitary products, here are a few options available for you:\n  
 ^ - You can request free period products here: <a href="https://www.freedom4girls.co.uk/request-products/ ">www.freedom4girls.co.uk</a>\n
 ^ - You can also contact your local council to see where they are currently providing free products here: <a href="https://www.mygov.scot/free-period-products ">Rwww.mygov.scot/free-period-products</a>\n
@@ -81,6 +83,7 @@
 ^ - You can also download the Pickupmyperiod app in App Store to find period products available in the area! 
 
 + why have i missed (a period|my period)
++ what happens if i miss (a period|my period)
 - Periods are a natural part of our body's menstrual cycle, and although on average a cycle last 28 days, it may vary from person to person or month to month, so your period may be slightly later or earlier each time. This is usually nothing to be worried about. There are many reasons why you may have missed a period. Some of the most common factors are:\n 
 ^ - If you are taking medication or birth control 
 ^ - If you have had a lot of stress recently  
@@ -315,16 +318,18 @@
 ^For more information about using the pill to regulate your period <a href="https://flo.health/menstrual-cycle/health/period/using-the-pill-to-regulate-periods ">click here</a>
 
 + what [birth control is] right [for me]
-- There are many different types of birth control available in the UK, which one is right for you is unique to your body and your needs!\n 
+- There are many different types of birth control available in the UK, which one is right for you is unique to your body and your needs! You may also need to try a few different birth controls until you find what's right for you, to do this speak with a healthcare professional such as your GP.\n 
 ^A few of the more popular options available to you are:\n 
 ^ - The contraceptive pill
 ^ - The implant
 ^ - The injection
 ^ - The IUD\n
-^Please read the article below for additional contraceptive options and advice:\n
+^However, not every available option is suited to each individual, due to different hormonal requirements. A history of blood clots in the family may also limit the types of birth control available for you.  
+^For more information about which bucket role is right for you consider reading the following article provided by the:\n
 ^<a href="https://www.nhs.uk/conditions/contraception/which-method-suits-me/?tabname=methods-of-contraception">Read more here.</a>\n
 ^Please note, the best way to figure out what contraceptive method would work best for you is by discussing it with a health care professional. I recommend contacting your doctor or if you do not want to contact your family GP directly find your nearest sexual health clinic for advice! 
 
++ 
 + *
 - I am sorry, I didn't get that. Do you wanna talk about something other than birth control?
 
