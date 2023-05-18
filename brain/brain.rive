@@ -79,7 +79,7 @@
 ^ - If you are currently a student in a state maintained school, or a 16 to 19 education organisation in England, your place of study is required to provide free sanitary products upon request under the government period product scheme. Just ask a member of staff!\n
 ^ - You can also download the Pickupmyperiod app in App Store to find period products available in the area! 
 
-+ why have i missed (a period|my period)
++ why (did|have) i (miss|missed) (a period|my period)
 - Periods are a natural part of our body's menstrual cycle, and although on average a cycle last 28 days, it may vary from person to person or month to month, so your period may be slightly later or earlier each time. This is usually nothing to be worried about. There are many reasons why you may have missed a period. Some of the most common factors are:\n 
 ^ - If you are taking medication or birth control 
 ^ - If you have had a lot of stress recently  
@@ -307,7 +307,7 @@
 
 ! local concat = newline
 
-+ [should i] [*] [birth control to] regulate [my] (period|periods)
++ [should i] [*] [birth control to] (regulate|help) [with] [my] (period|periods)
 - Birth control is a safe, approved way to help regulate and maintain your period, but it isn't the only option!\n 
 ^There are many natural ways to help regulate menstrual health, for example adapting your diet to optimise the benefits of your food throughout your cycle.\n 
 ^You should always discuss any concerns you may be having surrounding your period with your GP or a trusted health care professional.\n  
@@ -326,15 +326,53 @@
 ^Please note, the best way to figure out what contraceptive method would work best for you is by discussing it with a healthcare professional, I recommend contacting your doctor or if you do not want to contact your family GP directly find your nearest sexual health clinic for advice!  
 
 + what are the side effects of birth control
-- Each birth control method comes with it's own risks and side effects both short term and long term. Because of this, I recommend talking to your GP, nurse or pharmacist about the effects of your chosen birth control method. However, some of the most common side effects to look out for are premenstrual symptoms such as tender breasts, headaches and nausea although these will differ for everyone.
+- Each birth control method comes with it's own risks and side effects both short term and long term. Because of this, I recommend talking to your GP, nurse or pharmacist about the effects of your chosen birth control method.\n 
+^However, some of the most common side effects to look out for are premenstrual symptoms such as tender breasts, headaches and nausea although these will differ for everyone.
 
 + does all birth control have hormones
--Although the more common birth control methods such as the combined pill, the injection and hormone releasing coils do contain hormones, there are many hormone free options!  
+-Although the more common birth control methods such as the combined pill, the injection and hormone releasing coils do contain hormones, there are many hormone free options! For example:
 ^ - The diaphragm  
 ^ - The copper IUD  
 ^ - The Sponge  
 ^ - Cervical Cap\n
 ^If you are interested in what none hormonal birth control method best suits you, contact a GP, or another qualified health professional, such as a sexual health clinic.
+
++ what is the pill
+- The pill is a small contraceptive pill you take orally on a daily basis to protect yourself from pregnancy. However, it is also used to help regulate periods and hormones! The pill commonly comes in two forms: the combined pill which contains oestrogen and progesterone, or the oestrogen-only pill.
+
++ what is an iud
+- The IUD (intrauterine contraceptive device) or coil, is a small, often T-shaped birth control device that is inserted into the uterus to prevent pregnancy. IUDs are one form of long-acting reversible birth control. You can also use a copper IUD for a none hormonal version of this contraception.
+
++ what is an implant
+- The implant is another form of birth control and is a small implantable medical device often inserted into your arm to protect you from pregnancy. It works by slowly releasing a dose of progesterone into your body which prevents your ovaries from releasing an egg.  
+
++ what types of birth control exists
+- There are many types of birth control available in the UK, however, not all contraceptive methods may work for your body and your needs. To find out which birth control method works best for you I recommend contacting a healthcare professional such as your GP or a sexual health clinic.\n 
+^Some factors that may affect which birth control you choose are: the reason for taking the birth control, whether you want reversible or permanent protection, how often you want to take birth control, how regularly you want a period,  hormonal requirements or any family history of blood clots. Some of the options available are: 
+^ - The combined pill 
+^ - Condoms  
+^ - Female condoms  
+^ - Contraceptive implant  
+^ - Contraceptive injection  
+^ - Contraceptive patch  
+^ - Caps or diaphragms  
+^ - The IDU 
+^ - The hormonal coil 
+^ - Vaginal ring\n  
+^For more information on each birth control option and for a more extensive list, please read the information provided by the NHS: <a href="hhttps://www.nhs.uk/conditions/contraception/ ">Read more here.</a>\n
+
++ should i take the morning after pill
+- Emergency contraception should only be taken within 3 days of having unprotected sex to lessen your chances of getting pregnant. However, remember the sooner you take it, the more likely it is to be effective.\n 
+^There are 2 types of morning after pill available in the UK. Levonelle which you must take within 3 days of having unprotected sex, or the ellaOne which you must take within 5 days of having unprotected sex. Most women can use the emergency contraceptive pill. This includes women who can't use hormonal contraception, such as the combined pill, contraceptive patch and girls under 16 years old.\n  
+^To access the morning after pill for free you should visit contraception clinics, Brook centres, some pharmacies, most sexual health or genitourinary medicine (GUM) clinics, most NHS walk-in centres and minor injuries units, most GP surgeries and some hospital accident and emergency (A&E) departments.\n  
+^You can also purchase the morning after pill from shops such as Superdrug, boots and Lloyds pharmacy.\n
+^For more information of emergency contraception, as well as where you can access it, please read <a href="https://www.nhs.uk/conditions/contraception/where-can-i-get-emergency-contraception/">please read more here.</a>\n
+
++ can i get pregnant when i am on birth control
+- Although most women do not get pregnant while on birth control, there is a small possibility your contraception can fail as no birth control method is 100% effective. The only way to be 100% sure you will not get pregnant, is to not have any penetrative vaginal sex. One way to further protect yourself is to use more than one method of birth control, for example, the pill and a condom, although this still is not 100% effective.  
+
++ does birth control protect against stis
+- Although birth control such as the pill, patch, ring, and IUD are very effective at preventing pregnancy, they do not protect against STIs and HIV. The only form of contraception that also protects against STIs is condoms, for example, the male external condoms or the female vaginal condom. However, The most reliable way to avoid STDs is to not have vaginal, anal, or oral sex. 
 
 + *
 - I am sorry, I didn't get that. Do you wanna talk about something other than birth control?
