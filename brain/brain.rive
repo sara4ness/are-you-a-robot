@@ -15,7 +15,6 @@
 - Hi, my name is Ottie, I am an ovarie.\n
 ^ I am here to talk to you about:
 ^ - Periods
-^ - Period poverty
 ^ - Sanitary products
 ^ - Birth control
 ^ - Sexual health\n
@@ -29,7 +28,6 @@
 * <star> == period poverty => I see, what do you wanna know about period poverty?{topic=periods} <call>changebackground png/olive.png</call>
 - I am sorry, I didn't understand you. Here are some topics you can ask me about:\n 
 ^ - Periods
-^ - Period poverty
 ^ - Sanitary products
 ^ - Birth control
 ^ - Sexual health
@@ -156,8 +154,8 @@
 * <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
 * <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
 * <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
-* <star> == birth control => birth control {topic=birthcontrol} <call>changebackground png/ivy.png</call>
-* <star> == sexual health => Let me send you to Connie{topic=sexualhealth} <call>changebackground png/connie.png</call>
+* <star> == birth control => Let me send you to Ivy. {topic=birthcontrol} <call>changebackground png/ivy.png</call>
+* <star> == sexual health => Let me send you to Connie. {topic=sexualhealth} <call>changebackground png/connie.png</call>
 - Please respond with one of these options:\n
 ^ - Tampons
 ^ - Pads
@@ -272,8 +270,8 @@
 * <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
 * <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
 * <star> == periods => Let me send you back to Olive. {topic=periods} <call>changebackground png/olive.png</call>
-* <star> == birth control => birth control {topic=birthcontrol} <call>changebackground png/ivy.png</call>
-* <star> == sexual health => Let me send you to Connie{topic=sexualhealth} <call>changebackground png/connie.png</call>
+* <star> == birth control => Let me send you to Ivy. {topic=birthcontrol} <call>changebackground png/ivy.png</call>
+* <star> == sexual health => Let me send you to Connie. {topic=sexualhealth} <call>changebackground png/connie.png</call>
 - Please respond with one of these options:\n
 ^ - Pads
 ^ - Menstrual cups
@@ -352,8 +350,8 @@
 * <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
 * <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
 * <star> == periods => Let me send you back to Olive. {topic=periods} <call>changebackground png/olive.png</call>
-* <star> == birth control => birth control {topic=birthcontrol} <call>changebackground png/ivy.png</call>
-* <star> == sexual health => Let me send you to Connie{topic=sexualhealth} <call>changebackground png/connie.png</call>
+* <star> == birth control => Let me send you to Ivy. {topic=birthcontrol} <call>changebackground png/ivy.png</call>
+* <star> == sexual health => Let me send you to Connie. {topic=sexualhealth} <call>changebackground png/connie.png</call>
 - Please respond with one of these options:\n
 ^ - Tampons
 ^ - Menstrual cups
@@ -373,6 +371,9 @@
 > topic menstrualcups
 
 ! local concat = newline
+
++ [*] (hi|hello|hey|cooper) [*]
+- Heyaa, I am Cooper. I am here to tell you all about menstrual cups. What do you wanna know?
 
 + what is a menstrual cup
 - A menstrual cup is a menstrual hygiene device disc that is inserted into the vagina and sits below the cervix to collect menstrual fluid! Menstrual cups are usually made from silicone or latex and is therefore reusable. 
@@ -440,8 +441,8 @@
 * <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
 * <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
 * <star> == periods => Let me send you back to Olive. {topic=periods} <call>changebackground png/olive.png</call>
-* <star> == birth control => birth control {topic=birthcontrol} <call>changebackground png/ivy.png</call>
-* <star> == sexual health => Let me send you to Connie{topic=sexualhealth} <call>changebackground png/connie.png</call>
+* <star> == birth control => Let me send you to Ivy. {topic=birthcontrol} <call>changebackground png/ivy.png</call>
+* <star> == sexual health => Let me send you to Connie. {topic=sexualhealth} <call>changebackground png/connie.png</call>
 - Please respond with one of these options:\n
 ^ - Tampons
 ^ - Pads
@@ -458,6 +459,9 @@
 > topic birthcontrol
 
 ! local concat = newline
+
++ [*] (hi|hello|hey|ivy) [*]
+- Hii, I am Ivy. I am here to tell you everything about birth control. So, what do you want to know? {topic=birthcontrol} <call>changebackground png/ivy.png</call>
 
 + [should i] [*] [birth control to] (regulate|help) [with] [my] (period|periods)
 - Birth control is a safe, approved way to help regulate and maintain your period, but it isn't the only option!\n 
@@ -571,7 +575,7 @@
 * <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
 * <star> == periods => Let me send you back to Olive. {topic=periods} <call>changebackground png/olive.png</call>
 * <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
-* <star> == sexual health => Let me send you to Connie{topic=sexualhealth} <call>changebackground png/connie.png</call>
+* <star> == sexual health => Let me send you to Connie. {topic=sexualhealth} <call>changebackground png/connie.png</call>
 - Please respond with one of these options:\n
 ^ - Tampons
 ^ - Pads
@@ -588,6 +592,9 @@
 > topic sexualhealth
 
 ! local concat = newline
+
++ [*] (hi|hello|hey|connie) [*]
+- Yoo, Connie here. I heard you wanted to know some more about sexual health. What can I tell you about it?{topic=sexualhealth} <call>changebackground png/connie.png</call>
 
 + [i might have a] (std|sti) [what should i do]
 - while it is always recommended to use condoms to help protect yourself from contracting sexually transmitted infections, if you find yourself in the situation where you suspect you might have one, do not worry, I’m here to help!\n 
@@ -669,7 +676,7 @@
 * <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
 * <star> == periods => Let me send you back to Ottie. {topic=periods} <call>changebackground png/olive.png</call>
 * <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
-* <star> == birth control => birth control {topic=birthcontrol} <call>changebackground png/ivy.png</call>
+* <star> == birth control => Let me send you to Ivy. {topic=birthcontrol} <call>changebackground png/ivy.png</call>
 - Please respond with one of these options:\n
 ^ - Tampons
 ^ - Pads
