@@ -4,6 +4,7 @@
 
     const body = document.querySelector("body");
     body.style.background = `url(${args[0]})`
+    body.style.background.position = right;
     return ""
 
 < object
