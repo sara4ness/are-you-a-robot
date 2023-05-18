@@ -124,31 +124,45 @@
 ^ - Menstrual cups
 ^ - Birth control
 ^ - Sexual health
-^ - Period poverty
 * <star> == no => Okay, if you want to know more about periods try asking one of these questions:\n
 ^What is a period?\n
 ^What happens on a period?\n
-^Why have i missed a period?\n 
+^Why have I missed a period?\n 
 ^Do periods hurt?\n
 ^Can I swim on my period?\n
-^ What is period poverty?\n
+^What is period poverty?\n
 - Please answer with yes or no.
 
 + *
-% thats fine what do you want to talk about instead here are some options tampons pads menstrual cups birth control sexual health period poverty
+% please answer with yes or no
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Tampons
+^ - Pads
+^ - Menstrual cups
+^ - Birth control
+^ - Sexual health
+^What is a period?\n
+^What happens on a period?\n
+^Why have I missed a period?\n 
+^Do periods hurt?\n
+^Can I swim on my period?\n
+^What is period poverty?\n
+- Please answer with yes or no.
+
+
++ *
+% thats fine what do you want to talk about instead here are some options tampons pads menstrual cups birth control sexual health
 * <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
 * <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
 * <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
 * <star> == birth control => birth control {topic=birthcontrol} <call>changebackground png/ivy.png</call>
 * <star> == sexual health => Let me send you to Connie{topic=sexualhealth} <call>changebackground png/connie.png</call>
-* <star> == period poverty => I see, what do you wanna know about period poverty? {topic=periodpoverty} <call>changebackground png/olive.png</call>
 - Please respond with one of these options:\n
 ^ - Tampons
 ^ - Pads
 ^ - Menstrual cups
 ^ - Birth control
 ^ - Sexual health
-^ - Period poverty
 
 ! local concat = none
 
@@ -165,24 +179,52 @@
 
 ! local concat = newline
 
-+ how [*] (tampon|tampons)
-- Using a tampon for the first time can be daunting, but don’t worry, it’s not as scary as it looks! The most important step while inserting a tampon for the first time is to relax, as stressing yourself out can lead to your vaginal muscles tightening, making it even harder! Once relaxed, follow these simple steps: \n
-^First, get yourself in position comfortable for you, try spreading your legs apart or resting one leg higher up!\n
-^Depending on what brand you use, you start by simply take off the packaging. Some tampons also have an applicator whereas others are just the cotton tampon.\n
-^Once you have opened the tampon hold it with one hand at the indentations near the bottom and angle the tampon towards you.\n
-^Now slowly and carefully begin to insert the tampon inside your vagina until you reach the indentations.\n
-^Now slowly push the lower applicator section towards you until the lower section meets your fingers.\n 
-^If tampons feels uncomfortable after inserting it take it out and try again, don’t worry if you don’t get it the first time!\n 
-^For more information, Here is the perfect step by step guide provided by our friends at Tampax!
-^<a href="https://tampax.com/en-us/tampon-truths/how-to-insert-a-tampon/">Read more here.</a>\n 
-^Do you also want to know how to take out a tampon?
+// + how [*] (tampon|tampons)
+// - Using a tampon for the first time can be daunting, but don’t worry, it’s not as scary as it looks! The most important step while inserting a tampon for the first time is to relax, as stressing yourself out can lead to your vaginal muscles tightening, making it even harder! Once relaxed, follow these simple steps: \n
+// ^First, get yourself in position comfortable for you, try spreading your legs apart or resting one leg higher up!\n
+// ^Depending on what brand you use, you start by simply take off the packaging. Some tampons also have an applicator whereas others are just the cotton tampon.\n
+// ^Once you have opened the tampon hold it with one hand at the indentations near the bottom and angle the tampon towards you.\n
+// ^Now slowly and carefully begin to insert the tampon inside your vagina until you reach the indentations.\n
+// ^Now slowly push the lower applicator section towards you until the lower section meets your fingers.\n 
+// ^If tampons feels uncomfortable after inserting it take it out and try again, don’t worry if you don’t get it the first time!\n 
+// ^For more information, Here is the perfect step by step guide provided by our friends at Tampax!
+// ^<a href="https://tampax.com/en-us/tampon-truths/how-to-insert-a-tampon/">Read more here.</a>\n 
+// ^Do you also want to know how to take out a tampon?
 
-+ *
-% it is important to wash your hands before and after inserting a tampondepending on what brand you use you simply take off the packaging and use a finger to push it up the vaginal canal some tampons also have an applicator in that case you place this to the vagnial canal and press the tampon outyou should not be able to feel the tampon inside of you if you do you might have inserted it wrongdo you also want to know how to take out a tampon
-* <star> == yes => To remove a tampon you simply pull the string.\n
-^Remeber to always wash your hands before and after removing a tampon.
-* <star> == no => Okay
-- Yes or no would be the best answer.
+// + *
+// % it is important to wash your hands before and after inserting a tampondepending on what brand you use you simply take off the packaging and use a finger to push it up the vaginal canal some tampons also have an applicator in that case you place this to the vagnial canal and press the tampon outyou should not be able to feel the tampon inside of you if you do you might have inserted it wrongdo you also want to know how to take out a tampon
+// * <star> == yes => To remove a tampon you simply pull the string.\n
+// ^Remeber to always wash your hands before and after removing a tampon.
+// * <star> == no => Okay
+// - Yes or no would be the best answer.
+
++ should i be using a tampon
+- You should never feel pressure to use tampons or any other sanitary products. There is no correct product to be using when on your period and you should only be using products, you're comfortable with and that work best for your body and your needs. Tampons are easy and practical product which allows you to wear them for longer than other alternatives. If you are having a hard time using a tampon or are concerned about trying it may be useful to start with a much smaller size and change it more regularly working your way up to the larger heavier flow options.\n
+
++ how do i use a tampon
+- Using a tampon for the first time can be daunting, but don’t worry, it’s not as scary as it looks!\n 
+^The most important step while inserting a tampon for the first time is to relax, as stressing yourself out can lead to your vaginal muscles tightening, making it even harder! Once relaxed, follow these simple steps:\n 
+^1 – get yourself in position – spread your legs and find a position comfortable for you.\n
+^2 – Once you have opened the tampon hold it with one hand at the indentation and angle the tampon towards you.\n
+^3 – Now slowly and carefully begin to insert the tampon inside your vagina until you reach the indentations.\n
+^4 – now slowly push the lower applicator section towards you until the lower section meets your fingers and the indentation.\n
+^5 – if tampons feels uncomfortable after inserting it take it out and try again, don’t worry if you don’t get it the first time!\n 
+^For a more detailed step by step guide on how to insert different types of tampons, <a href="https://flo.health/menstrual-cycle/lifestyle/hygiene-and-beauty/how-to-insert-a-tampon">please read more here.</a>\n 
+
++ how often should i change my tampon
+- You should change your tampon every 4-8 hours, or when you feel it can no longer absorb more blood, whichever comes first. If you are not sure if it is time to change your tampon within this time bracket, you can simply check when in the toilet by gently tugging on the removal string. If it feels stiff and uncomfortable to remove you could probably leave it in for longer however do not exceed the 8 hours.
+
++ can i swim with a tampon in
+- Yes, you can swim with a tampon in, you don't need to remove your tampon before swimming just remember to change it after being in the water.
+
++ can i swim on my period
+- Yes, you can swim on your period! However, you should use a tampon or menstrual cup unless your flow is very light. 
+
++ what size tampon [is right for me|should i use]
+- The size of tampon you should be using depends on your flow and what you're comfortable with. If you bleed more and find you have a heavier flow it may be beneficial to use a bigger tampon however if you find this uncomfortable you may also use a lighter, smaller tampon, and change it more regularly. 
+
++ what [period product] should i use overnight
+- That is completely up to you! It is absolutely fine to wear tampons, pads, menstrual cups or period underwear overnight. Consider what product may be best for you think about what you are comfortable with as well as how long you will be sleeping. Tampons should be removed after eight hours, so if you are sleeping in one you should change it before you go to bed and when you wake up. However, if you are sleeping for more than 8 hours, it is advised to wear a period pad as it is safer to wear if sleeping for a longer period of time. 
 
 + [*](pad|pads)[*]
 - Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
@@ -198,25 +240,45 @@
 ^ - Periods
 ^ - Birth control
 ^ - Sexual health
-^ - Period poverty
-* <star> == no => Okay, if you want to know more about tampons try asking one of these questions:
+* <star> == no => Okay, if you want to know more about tampons try asking one of these questions:\n
+^Should I be using a tampon?\n
+^How do I use a tampon?\n
+^How often should I change a tampon?\n
+^Can I swim with a tampon in?\n
+^What size tampon should I use?\n
+^What should I use overnight?
 - Please answer with yes or no.
 
 + *
-% thats fine what do you want to talk about instead here are some options pads menstrual cups periods birth control sexual health period poverty
+% please answer with yes or no
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Pads
+^ - Menstrual cups
+^ - Periods
+^ - Birth control
+^ - Sexual health
+* <star> == no => Okay, if you want to know more about tampons try asking one of these questions:\n
+^Should I be using a tampon?\n
+^How do I use a tampon?\n
+^How often should I change a tampon?\n
+^Can I swim with a tampon in?\n
+^What size tampon should I use?\n
+^What should I use overnight?
+- Please answer with yes or no.
+
++ *
+% thats fine what do you want to talk about instead here are some options pads menstrual cups periods birth control sexual health
 * <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
 * <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
 * <star> == periods => Let me send you back to Olive. {topic=periods} <call>changebackground png/olive.png</call>
 * <star> == birth control => birth control {topic=birthcontrol} <call>changebackground png/ivy.png</call>
 * <star> == sexual health => Let me send you to Connie{topic=sexualhealth} <call>changebackground png/connie.png</call>
-* <star> == period poverty => Let me send you back to Olive. {topic=periodpoverty} <call>changebackground png/olive.png</call>
 - Please respond with one of these options:\n
 ^ - Pads
 ^ - Menstrual cups
 ^ - Periods
 ^ - Birth control
 ^ - Sexual health
-^ - Period poverty
 
 ! local concat = none
 
@@ -231,11 +293,23 @@
 + [*] (hi|hello|hey|patty) [*]
 - Hi, I am Patty. I am here to talk to you about everything pad related. What do you wanna know?
 
-+ what [*] (pad|pads)
++ what [are] [*] (pad|pads)
 - A pad is made of absorbent material such as cotton that sticks to your underwear to collect period fuild. They can come in a variety of sizes to suit your flow and comfort!
 
-+ how [*] (pad|pads)
++ how do i [use] [*] (pad|pads)
 - Don’t worry, it’s super easy! Pads are external, so all you have to do is stick it onto your underwear making sure you centre it according to where your flow goes! If your pad has wings, simply fold them over on each side 😊 \n
+
++ how often should i change my pad
+- Pads should be changed every three to four hours, or when it can no longer absorb more blood. Whichever comes first!
+
++ can i wear a [period] pad with a thong
+- Yes! Period pads, or other period products such as tampons and menstrual cups can be worn with a thong! However, you may not find it comfortable wearing thicker, heavier flow pads while wearing a thing due to the lack of material towards the back. 
+
++ what size [period] pad should i be wearing
+- What size period pad you should be wearing is completely unique to you! It will depend on the length of wear, your flow, and the size of your vagina or the underwear you will be wearing. One thing to consider is if you have a heavier flow, or intend to wear the pad for up to 8 hours you may find it more convenient and comfortable to wear a larger, thicker pad. 
+
++ what [period product] should i use overnight
+- That is completely up to you! It is absolutely fine to wear tampons, pads, menstrual cups or period underwear overnight. Consider what product may be best for you think about what you are comfortable with as well as how long you will be sleeping. Tampons should be removed after eight hours, so if you are sleeping in one you should change it before you go to bed and when you wake up. However, if you are sleeping for more than 8 hours, it is advised to wear a period pad as it is safer to wear if sleeping for a longer period of time.
 
 + *
 - I am sorry, I didn't get that. Do you wanna talk about something other than pads?
@@ -248,25 +322,43 @@
 ^ - Periods
 ^ - Birth control
 ^ - Sexual health
-^ - Period poverty
-* <star> == no => Okay, if you want to know more about pads try asking one of these questions:
+* <star> == no => Okay, if you want to know more about pads try asking one of these questions:\n
+^How do I use a pad?\n
+^How often should I change my pad?\n
+^What size pad should I be wearing?\n
+^Can I wear a pad with a thong?\n
+^What should I use overnight?
 - Please answer with yes or no.
 
 + *
-% thats fine what do you want to talk about instead here are some options tampons menstrual cups periods birth control sexual health period poverty
+% please answer with yes or no
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Tampons
+^ - Menstrual cups
+^ - Periods
+^ - Birth control
+^ - Sexual health
+* <star> == no => Okay, if you want to know more about pads try asking one of these questions:\n
+^How do I use a pad?\n
+^How often should I change my pad?\n
+^What size pad should I be wearing?\n
+^Can I wear a pad with a thong?\n
+^What should I use overnight?
+- Please answer with yes or no.
+
++ *
+% thats fine what do you want to talk about instead here are some options tampons menstrual cups periods birth control sexual health
 * <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
 * <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
 * <star> == periods => Let me send you back to Olive. {topic=periods} <call>changebackground png/olive.png</call>
 * <star> == birth control => birth control {topic=birthcontrol} <call>changebackground png/ivy.png</call>
 * <star> == sexual health => Let me send you to Connie{topic=sexualhealth} <call>changebackground png/connie.png</call>
-* <star> == period poverty => Let me send you back to Olive. {topic=periodpoverty} <call>changebackground png/olive.png</call>
 - Please respond with one of these options:\n
 ^ - Tampons
 ^ - Menstrual cups
 ^ - Periods
 ^ - Birth control
 ^ - Sexual health
-^ - Period poverty
 
 + [*](tampon|tamponss)[*]
 - Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
@@ -280,6 +372,24 @@
 > topic menstrualcups
 
 ! local concat = newline
+
++ what is a menstrual cup
+- A menstrual cup is a menstrual hygiene device disc that is inserted into the vagina and sits below the cervix to collect menstrual fluid! Menstrual cups are usually made from silicone or latex and is therefore reusable. 
+
++ how do i use a menstrual cup
+- A menstrual cup is a menstrual hygiene device disc that is inserted into the vagina and sits below the cervix to collect menstrual fluid! Menstrual cups are also reusable, making them more sustainable period product alternatives!  
+
++ how often should i clean my menstrual cup
+- You should clean your menstrual cup after every use, or at least every 12 hours while on your period (whenever you empty and reuse it!) you should also sterilise the cup after every period.  
+
++ how do i clean my menstrual cup
+- To clean your menstrual cup at home you should empty the period blood or fluid collection into the toilet, then, rinse it out with clean water, and use a mild, oil-free, fragrance-free soap to give it a quick clean. Once it's clean, you can reinsert the cup. At the end of every period, you should also sterilise the menstrual cup, to do this, after cleaning it with hot water ad a gentle soap, oyou can place it in boiling water to fully sanitize it before your next period.To quickly sanitise you can alsoo place your cup inside of a metal whisk and leave it in a pot of boiling water for only one to two minutes.  
+
++ how [often should i|long before i should] empty my menstrual cup
+- Most menstrual cups can stay in for up to 12 hours before being emptied and rinsed. This means you can wear one when you're sleeping, or all day long. However, when your flow is at its heaviest, you may need to empty a cup more often. You can use the same cup for your heaviest and lightest days. 
+
++ can i swim with a menstrual cup
+- Yes! Just like. tampon, menstrual cups are worn internally, and so can be worn while swimming! Just remember to clean your menstrual cup after swimming to prevent any bacteria collection.  
 
 + [*](pad|pads)[*]
 - Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
@@ -298,25 +408,45 @@
 ^ - Periods
 ^ - Birth control
 ^ - Sexual health
-^ - Period poverty
-* <star> == no => Okay, if you want to know more about menstrual cups try asking one of these questions:
+* <star> == no => Okay, if you want to know more about menstrual cups try asking one of these questions:\n
+^What is a menstrual cup?\n
+^How do I use a menstrual cup?\n
+^How often should I clean my menstrual cup?\n
+^How do I clean my menstrual cup?\n
+^How often should I change my menstrual cup?\n
+^Can I swim with a menstrual cup?
 - Please answer with yes or no.
 
 + *
-% thats fine what do you want to talk about instead here are some options tampons pads periods birth control sexual health period poverty
+% please answer with yes or no
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Tampons
+^ - Pads
+^ - Periods
+^ - Birth control
+^ - Sexual health
+* <star> == no => Okay, if you want to know more about menstrual cups try asking one of these questions:\n
+^What is a menstrual cup?\n
+^How do I use a menstrual cup?\n
+^How often should I clean my menstrual cup?\n
+^How do I clean my menstrual cup?\n
+^How often should I empty my menstrual cup?\n
+^Can I swim with a menstrual cup?
+- Please answer with yes or no.
+
++ *
+% thats fine what do you want to talk about instead here are some options tampons pads periods birth control sexual health
 * <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
 * <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
 * <star> == periods => Let me send you back to Olive. {topic=periods} <call>changebackground png/olive.png</call>
 * <star> == birth control => birth control {topic=birthcontrol} <call>changebackground png/ivy.png</call>
 * <star> == sexual health => Let me send you to Connie{topic=sexualhealth} <call>changebackground png/connie.png</call>
-* <star> == period poverty => Let me send you back to Olive. {topic=periodpoverty} <call>changebackground png/olive.png</call>
 - Please respond with one of these options:\n
 ^ - Tampons
 ^ - Pads
 ^ - Periods
 ^ - Birth control
 ^ - Sexual health
-^ - Period poverty
 
 ! local concat = none
 
@@ -334,7 +464,7 @@
 ^You should always discuss any concerns you may be having surrounding your period with your GP or a trusted health care professional.\n  
 ^For more information about using the pill to regulate your period <a href="https://flo.health/menstrual-cycle/health/period/using-the-pill-to-regulate-periods ">click here</a>
 
-+ what [birth control] [is] right [for me]
++ what [birth control] (is right for me|should i use)
 - There are many different types of birth control available in the UK, which one is right for you is unique to your body and your needs! You may also need to try a few different birth controls until you find what's right for you, to do this speak with a healthcare professional such as your GP.\n 
 ^A few of the more popular options available to you are:\n 
 ^ - The contraceptive pill
@@ -392,7 +522,7 @@
 + can i get pregnant when i am on birth control
 - Although most women do not get pregnant while on birth control, there is a small possibility your contraception can fail as no birth control method is 100% effective. The only way to be 100% sure you will not get pregnant, is to not have any penetrative vaginal sex. One way to further protect yourself is to use more than one method of birth control, for example, the pill and a condom, although this still is not 100% effective.  
 
-+ does birth control protect against stis
++ does birth control protect against (stis|stds)
 - Although birth control such as the pill, patch, ring, and IUD are very effective at preventing pregnancy, they do not protect against STIs and HIV. The only form of contraception that also protects against STIs is condoms, for example, the male external condoms or the female vaginal condom. However, The most reliable way to avoid STDs is to not have vaginal, anal, or oral sex. 
 
 + *
@@ -406,25 +536,47 @@
 ^ - Menstrual cups
 ^ - Periods
 ^ - Sexual health
-^ - Period poverty
-* <star> == no => Okay, if you want to know more about birth control try asking one of these questions:
+* <star> == no => Okay, if you want to know more about birth control try asking one of these questions:\n
+^Should I take birth control to help with my periods?\n
+^What birth control should I use?\n
+^What are the side effects of birth control?\n
+^What types of birth control exists?\n
+^Can I get pregnant when I am on birth control?\n
+^Should I take the morning after pill?\n
+^Does birth control protect against STIs?
 - Please answer with yes or no.
 
 + *
-% thats fine what do you want to talk about instead here are some options tampons pads menstrual cups periods sexual health period poverty
+% please answer with yes or no
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Tampons
+^ - Pads
+^ - Menstrual cups
+^ - Periods
+^ - Sexual health
+* <star> == no => Okay, if you want to know more about birth control try asking one of these questions:\n
+^Should I take birth control to help with my periods?\n
+^What birth control should I use?\n
+^What are the side effects of birth control?\n
+^What types of birth control exists?\n
+^Can I get pregnant when I am on birth control?\n
+^Should I take the morning after pill?\n
+^Does birth control protect against STIs?
+- Please answer with yes or no.
+
++ *
+% thats fine what do you want to talk about instead here are some options tampons pads menstrual cups periods sexual health
 * <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
 * <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
 * <star> == periods => Let me send you back to Olive. {topic=periods} <call>changebackground png/olive.png</call>
 * <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
 * <star> == sexual health => Let me send you to Connie{topic=sexualhealth} <call>changebackground png/connie.png</call>
-* <star> == period poverty => Let me send you back to Olive. {topic=periodpoverty} <call>changebackground png/olive.png</call>
 - Please respond with one of these options:\n
 ^ - Tampons
 ^ - Pads
 ^ - Menstrual cups
 ^ - Periods
 ^ - Sexual health
-^ - Period poverty
 
 ! local concat = none
 
@@ -436,9 +588,9 @@
 
 ! local concat = newline
 
-+ [i might have an] (std|sti) [what should i do]
-- While it is always recommended to use condoms to help protect yourself from contracting sexually transmitted infections, if you find yourself in the situation where you suspect you might have one, do not worry, I’m here to help!\n 
-^Most STI’s can be successfully treated but it is important you get checked out as soon as possible. If you begin to suspect you may have contracted an STI or experience any of the following symptoms, contact your GP or a sexual health clinic promptly. It is always better to have any concerns or symptoms checked out by a healthcare professional.\n
++ [i might have a] (std|sti) [what should i do]
+- while it is always recommended to use condoms to help protect yourself from contracting sexually transmitted infections, if you find yourself in the situation where you suspect you might have one, do not worry, I’m here to help!\n 
+^Most STI’s can be successfully treated but it is important you get checked out as soon as possible. If you begin to suspect you may have contracted an STI or experience any of the following symptoms, contact your GP or a sexual health clinic promptly, it is always better to have any concerns or symptoms checked out by a healthcare professional.\n
 ^Symptoms of an STI may include:
 ^ -	An unusual discharge from the vagina, penis or anus.
 ^ -	Pain when peeing.
@@ -449,10 +601,31 @@
 ^ -	Blisters, sores or wards around your genitals or anus.
 ^ -	Warts in your mouth or throat, although this is very rare.\n
 ^Please try and remember that contracting a sexually transmitted infection is nothing to feel ashamed of and you should not feel embarrassed about asking for help!\n
-^If you have been diagnosed with an STI your doctor will discuss what treatments are best for you, don’t forget to also inform any sexual partners of your diagnosis so they can get checked too.\n 
+^If you have been diagnosed with an STI your doctor will discuss what treatments are best for you, don’t forgot to also inform any sexual partners of your diagnosis so they can get check too.\n 
 ^I understand this can be a daunting step to take so please know there are many services available online to anonymously notify a sexual partner that they should get tested, a few of these are:
 ^<a href="https://www.anonymoustext.co.uk/how-to-send-an-anonymous-text/">anonymoustext.co.uk</a>
 ^<a href="https://tellyourpartner.org ">tellyourpartner.org</a>
+
++ what are symptoms of a (std|sti)
+- Symptoms of an STI may include: 
+^ -	An unusual discharge from the vagina, penis or anus.
+^ -	Pain when peeing.
+^ - Lumps or skin growth around the genitals or bottom.
+^ -	A rash.
+^ -	Unusual vaginal bleeding.
+^ -	Itchy genitals or anus.
+^ -	Blisters, sores or wards around your genitals or anus.
+^ -	Warts in your mouth or throat, although this is very rare.\n
+^Please try and remember that contracting a sexually transmitted infection is nothing to feel ashamed of and you should not feel embarrassed about asking for help!  
+
++ how do i get rid of a (std|sti)
+- If you have been diagnosed with an STI you will need antibiotics to get rid of it, the easiest way to do this is to contact your GP or sexual health clinic! Often a single dose, can cure many sexually transmitted bacterial and parasitic infections, including gonorrhoea, syphilis, and chlamydia. Please remember, once you start antibiotic treatment, it is necessary to finish the prescription. 
+
++ how often should i get tested
+- Regular testing for HIV and STIs is essential for good sexual health! Everyone should have an STI screen, including an HIV test, annually if having condomless sex. It is also advised to have an STI screening everytime you has sex with a new or casual partner.  
+
++ when can i have sex again after [having] a (std|sti)
+- Although every STI is different it is advised you wait at least 7 days after finishing antibiotics for an STI to have sex again. However, I recommend discussing this with your health care professional for a more accurate time scale.  
 
 + *
 - I am sorry, I didn't get that. Do you wanna talk about something other than sexual health?
@@ -465,78 +638,96 @@
 ^ - Menstrual cups
 ^ - Periods
 ^ - Birth control
-^ - Period poverty
-* <star> == no => Okay, if you want to know more about sexual health try asking one of these questions:
+* <star> == no => Okay, if you want to know more about sexual health try asking one of these questions:\n
+^I might have a STI, what should I do?\n
+^What are symptoms of a STI?\n
+^How do I get rid of a STI?\n
+^How often should I get tested?\n
+^When can I have sex again after a STI?
 - Please answer with yes or no.
 
 + *
-% thats fine what do you want to talk about instead here are some options tampons pads menstrual cups periods birth control period poverty
-* <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
-* <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
-* <star> == periods => Let me send you back to Ottie. {topic=periods} <call>changebackground png/olive.png</call>
-* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
-* <star> == birth control => birth control {topic=birthcontrol} <call>changebackground png/ivy.png</call>
-* <star> == period poverty => Let me send you back to Ottie. {topic=periodpoverty}<call>changebackground png/olive.png</call>
-- Please respond with one of these options:\n
-^ - Tampons
-^ - Pads
-^ - Menstrual cups
-^ - Periods
-^ - Birth control
-^ - Period poverty
-
-! local concat = none
-
-< topic
-
-
-
-> topic periodpoverty
-
-! local concat = newline
-
-+ [*] (hi|hello|hey|Ottie) [*]
-- What do you wanna know about period poverty?
-
-- Hi, I am Patty. I am here to talk to you about everything pad related. What do you wanna know?
-
-+ what is period poverty
-- Period poverty is
-
-+ *
-- I am sorry, I didn't get that. Do you wanna talk about something other than period poverty?
-
-+ *
-% i am sorry i did not get that do you want to talk about something other than period poverty
+% please answer with yes or no
 * <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
 ^ - Tampons
 ^ - Pads
 ^ - Menstrual cups
 ^ - Periods
 ^ - Birth control
-^ - Sexual health
-* <star> == no => Okay, if you want to know more about period poverty try asking one of these questions:
+* <star> == no => Okay, if you want to know more about sexual health try asking one of these questions:\n
+^I might have a STI, what should I do?\n
+^What are symptoms of a STI?\n
+^How do I get rid of a STI?\n
+^How often should I get tested?\n
+^When can I have sex again after a STI?
 - Please answer with yes or no.
 
 + *
-% thats fine what do you want to talk about instead here are some options tampons pads menstrual cups periods birth control sexual health
+% thats fine what do you want to talk about instead here are some options tampons pads menstrual cups periods birth control
 * <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
 * <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
-* <star> == periods => Okay girl, what do you wanna know about periods? {topic=periods} <call>changebackground png/olive.png</call>
+* <star> == periods => Let me send you back to Ottie. {topic=periods} <call>changebackground png/olive.png</call>
 * <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
 * <star> == birth control => birth control {topic=birthcontrol} <call>changebackground png/ivy.png</call>
-* <star> == sexual health => Let me send you to Connie{topic=sexualhealth} <call>changebackground png/connie.png</call>
 - Please respond with one of these options:\n
 ^ - Tampons
 ^ - Pads
 ^ - Menstrual cups
 ^ - Periods
 ^ - Birth control
-^ - Sexual health
 
 ! local concat = none
 
 < topic
+
+
+
+// > topic periodpoverty
+
+// ! local concat = newline
+
+// + [*] (hi|hello|hey|ottie) [*]
+// - What do you wanna know about period poverty?
+
+// - Hi, I am Patty. I am here to talk to you about everything pad related. What do you wanna know?
+
+// + what is period poverty
+// - Period poverty is
+
+// + *
+// - I am sorry, I didn't get that. Do you wanna talk about something other than period poverty?
+
+// + *
+// % i am sorry i did not get that do you want to talk about something other than period poverty
+// * <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+// ^ - Tampons
+// ^ - Pads
+// ^ - Menstrual cups
+// ^ - Periods
+// ^ - Birth control
+// ^ - Sexual health
+// * <star> == no => Okay, if you want to know more about period poverty try asking one of these questions:
+// - Please answer with yes or no.
+
+// + *
+// % thats fine what do you want to talk about instead here are some options tampons pads menstrual cups periods birth control sexual health
+// * <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
+// * <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
+// * <star> == periods => Okay girl, what do you wanna know about periods? {topic=periods} <call>changebackground png/olive.png</call>
+// * <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
+// * <star> == birth control => birth control {topic=birthcontrol} <call>changebackground png/ivy.png</call>
+// * <star> == sexual health => Let me send you to Connie{topic=sexualhealth} <call>changebackground png/connie.png</call>
+// - Please respond with one of these options:\n
+// ^ - Tampons
+// ^ - Pads
+// ^ - Menstrual cups
+// ^ - Periods
+// ^ - Birth control
+// ^ - Sexual health
+
+// ! local concat = none
+
+// < topic
 
 
 
