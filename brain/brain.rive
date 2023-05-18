@@ -19,7 +19,6 @@
 ^ - Birth control
 ^ - Sexual health\n
 ^ If you want to learn more about one of these topics just respond with the topic you wanna talk about.
-// ^ <call>changebackground Olive.png</call>
 
 + *
 * <star> == sanitary products => Do you want to talk about pads, tampons or menstrual cups?
@@ -52,7 +51,7 @@
 - Yoo, Connie here. I heard you wanted to know some more about sexual health. What can I tell you about it? {topic=sexualhealth} <call>changebackground png/connie.png</call>
 
 + [*] (period|periods) [*]
-- Okay girl, what do you wanna know about periods? {topic=periods} <call>changebackground png/olive.png</call>
+- Okay girl, so what do you wanna know about periods? {topic=periods} <call>changebackground png/olive.png</call>
 
 
 
@@ -83,7 +82,6 @@
 ^ - You can also download the Pickupmyperiod app in App Store to find period products available in the area! 
 
 + why have i missed (a period|my period)
-+ what happens if i miss (a period|my period)
 - Periods are a natural part of our body's menstrual cycle, and although on average a cycle last 28 days, it may vary from person to person or month to month, so your period may be slightly later or earlier each time. This is usually nothing to be worried about. There are many reasons why you may have missed a period. Some of the most common factors are:\n 
 ^ - If you are taking medication or birth control 
 ^ - If you have had a lot of stress recently  
@@ -93,6 +91,18 @@
 ^ - Hormonal changes 
 ^ - Underlying health conditions\n 
 ^If you are sexually active, it is advised that you take a pregnancy test when you notice you have missed your period. However, there is no way of knowing the cause of missed periods without seeking professional medical help. So, we advise booking an appointment with your GP to discuss any concerns you have about a missed period. 
+
++ what happens if i miss (a period|my period)
+- Periods are a natural part of our body's menstrual cycle, and although on average a cycle last 28 days, it may vary from person to person or month to month, so your period may be slightly later or earlier each time. This is usually nothing to be worried about. There are many reasons why you may have missed a period. Some of the most common factors are:\n 
+^ - If you are taking medication or birth control 
+^ - If you have had a lot of stress recently  
+^ - If you are pregnant  
+^ - If you have lost a lot of weight 
+^ - If you are not eating enough  
+^ - Hormonal changes 
+^ - Underlying health conditions\n 
+^ - If you are sexually active, it is advised that you take a pregnancy test when you notce you have missed a period. However, there is no way of knowing the cause of missed periods without seeking professional medical help. So, we advise booking an appointment with your GP to discuss any concerns you have about a missed period
+
 
 + do periods hurt
 - Periods can hurt. It is very common to experience cramps in your stomach and back, as well as potentially in your thighs or around your bum. The intensity of these pains may vary from person to person and period to period.\n 
@@ -317,17 +327,39 @@
 ^You should always discuss any concerns you may be having surrounding your period with your GP or a trusted health care professional.\n  
 ^For more information about using the pill to regulate your period <a href="https://flo.health/menstrual-cycle/health/period/using-the-pill-to-regulate-periods ">click here</a>
 
+<<<<<<< HEAD
 + what [birth control is] right [for me]
 - There are many different types of birth control available in the UK, which one is right for you is unique to your body and your needs! You may also need to try a few different birth controls until you find what's right for you, to do this speak with a healthcare professional such as your GP.\n 
 ^A few of the more popular options available to you are:\n 
+=======
++ what [birth control] [is] right [for me]
+- There are many different types of birth control available in the UK, which one is right for you is unique to your body and your needs! You may also need to try a few different birth controls until you find what's right for you, to do this speak with a healthcare professional such as your GP. \n 
+^A few of the more popular options available are:\n 
+>>>>>>> f530a38481ec9572e16326607c07d5ffd593780c
 ^ - The contraceptive pill
 ^ - The implant
 ^ - The injection
 ^ - The IUD\n
+<<<<<<< HEAD
 ^However, not every available option is suited to each individual, due to different hormonal requirements. A history of blood clots in the family may also limit the types of birth control available for you.  
 ^For more information about which bucket role is right for you consider reading the following article provided by the:\n
+=======
+^However, not every available option is suited to each individual, due to different hormonal requirements. A history of blood clots in the family may also limit the types of birth control available for you.\n
+^For more information about which birth control is right for you consider reading the following article provided by the NHS:\n
+>>>>>>> f530a38481ec9572e16326607c07d5ffd593780c
 ^<a href="https://www.nhs.uk/conditions/contraception/which-method-suits-me/?tabname=methods-of-contraception">Read more here.</a>\n
-^Please note, the best way to figure out what contraceptive method would work best for you is by discussing it with a health care professional. I recommend contacting your doctor or if you do not want to contact your family GP directly find your nearest sexual health clinic for advice! 
+^Please note, the best way to figure out what contraceptive method would work best for you is by discussing it with a healthcare professional, I recommend contacting your doctor or if you do not want to contact your family GP directly find your nearest sexual health clinic for advice!  
+
++ what are the side effects of birth control
+- Each birth control method comes with it's own risks and side effects both short term and long term. Because of this, I recommend talking to your GP, nurse or pharmacist about the effects of your chosen birth control method. However, some of the most common side effects to look out for are premenstrual symptoms such as tender breasts, headaches and nausea although these will differ for everyone.
+
++ does all birth control have hormones
+-Although the more common birth control methods such as the combined pill, the injection and hormone releasing coils do contain hormones, there are many hormone free options!  
+^ - The diaphragm  
+^ - The copper IUD  
+^ - The Sponge  
+^ - Cervical Cap\n
+^If you are interested in what none hormonal birth control method best suits you, contact a GP, or another qualified health professional, such as a sexual health clinic.
 
 + 
 + *
