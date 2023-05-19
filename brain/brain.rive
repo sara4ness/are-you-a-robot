@@ -152,7 +152,7 @@
 + *
 % thats fine what do you want to talk about instead here are some options tampons pads menstrual cups birth control sexual health
 * <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
-* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
+* <star> == menstrual cups => Let me send you to Cooper. {topic=menstrualcups} <call>changebackground png/cuppie.png</call>
 * <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
 * <star> == birth control => Let me send you to Ivy. {topic=birthcontrol} <call>changebackground png/ivy.png</call>
 * <star> == sexual health => Let me send you to Connie. {topic=sexualhealth} <call>changebackground png/connie.png</call>
@@ -276,7 +276,7 @@
 + *
 % thats fine what do you want to talk about instead here are some options pads menstrual cups periods birth control sexual health
 * <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
-* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
+* <star> == menstrual cups => Let me send you to Cooper. {topic=menstrualcupss} <call>changebackground png/cuppie.png</call>
 * <star> == periods => Let me send you back to Ottie. {topic=periods} <call>changebackground png/olive.png</call>
 * <star> == birth control => Let me send you to Ivy. {topic=birthcontrol} <call>changebackground png/ivy.png</call>
 * <star> == sexual health => Let me send you to Connie. {topic=sexualhealth} <call>changebackground png/connie.png</call>
@@ -356,7 +356,7 @@
 + *
 % thats fine what do you want to talk about instead here are some options tampons menstrual cups periods birth control sexual health
 * <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
-* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
+* <star> == menstrual cups => Let me send you to Cooper. {topic=menstrualcups} <call>changebackground png/cuppie.png</call>
 * <star> == periods => Let me send you back to Ottie. {topic=periods} <call>changebackground png/olive.png</call>
 * <star> == birth control => Let me send you to Ivy. {topic=birthcontrol} <call>changebackground png/ivy.png</call>
 * <star> == sexual health => Let me send you to Connie. {topic=sexualhealth} <call>changebackground png/connie.png</call>
@@ -582,7 +582,7 @@
 * <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
 * <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
 * <star> == periods => Let me send you back to Ottie. {topic=periods} <call>changebackground png/olive.png</call>
-* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
+* <star> == menstrual cups => Let me send you to Cooper. {topic=menstrualcups} <call>changebackground png/cuppie.png</call>
 * <star> == sexual health => Let me send you to Connie. {topic=sexualhealth} <call>changebackground png/connie.png</call>
 - Please respond with one of these options:\n
 ^ - Tampons
@@ -683,7 +683,7 @@
 * <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
 * <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
 * <star> == periods => Let me send you back to Ottie. {topic=periods} <call>changebackground png/olive.png</call>
-* <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
+* <star> == menstrual cups => Let me send you to Cooper. {topic=menstrualcups} <call>changebackground png/cuppie.png</call>
 * <star> == birth control => Let me send you to Ivy. {topic=birthcontrol} <call>changebackground png/ivy.png</call>
 - Please respond with one of these options:\n
 ^ - Tampons
