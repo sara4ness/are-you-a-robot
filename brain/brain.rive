@@ -20,6 +20,25 @@
 ^ - Sexual health\n
 ^ If you want to learn more about one of these topics just respond with the topic you wanna talk about.
 
++ (whats|what is) your name
+- My name is Ottie, what's your name?
+
++ my name is *
+- <set name=<star>>Nice to meet you <get name>
+
++ what is my name
+* <get name> == undefined => I don't think you told me your name, what is it?
+- Your name is <get name>, silly!{weight=3}
+- You told me your name is <get name>.
+
++ who am i
+* <get name> == undefined => I don't think you told me, what's your name?
+- Aren't you <get name>?
+- You told me your name is <get name>. {weight=3}
+
++ who are you
+- I am Ottie.
+
 + *
 * <star> == sanitary products => Do you want to talk about pads, tampons or menstrual cups?
 * <star> == birth control => Hii, I am Ivy. I am here to tell you everything about birth control. So, what do you want to know? {topic=birthcontrol} <call>changebackground png/ivy.png</call>
@@ -57,6 +76,25 @@
 > topic periods
 
 ! local concat = newline
+
++ (whats|what is) your name
+- My name is Ottie, what's your name?
+
++ my name is *
+- <set name=<star>>Nice to meet you <get name>
+
++ what is my name
+* <get name> == undefined => I don't think you told me your name, what is it?
+- You are <get name>! {weight=3}
+- You told me your name is <get name>? 
+
++ who am i
+* <get name> == undefined => I don't think you told me, what's your name?
+- Aren't you <get name>?
+- You are <get name>!
+
++ who are you
+- I am Ottie!
 
 + (hi|hello|hey)
 - Hi, my name is Ottie, I am an ovarie. What do you wanna know about periods? <call>changebackground png/olive.png</call>
@@ -170,6 +208,26 @@
 
 
 > topic tampons
+
++ (whats|what is) your name
+- My name is Tammy, what's your name?
+
++ my name is *
+- <set name=<star>>Nice to meet you <get name>
+
++ what is my name
+* <get name> == undefined => I don't think you told me your name, what is it?
+- Your name is <get name>, silly!
+- You told me your name is <get name>? {weight=3}
+
++ who am i
+* <get name> == undefined => I don't think you told me, what's your name?
+- Aren't you <get name>?
+- You told me your name is <get name>. {weight=3}
+
++ who are you
+- I am Tammy.
+
 + [*] (hi|hello|hey|tammy) [*]
 - Hi, I am Tammy. I am here to talk to you about everything tampon related. What do you wanna know? <call>changebackground png/tammy.png</call>
 
@@ -297,6 +355,25 @@
 > topic pads
 ! local concat = newline
 
++ (whats|what is) your name
+- My name is Patty, what's your name?
+
++ my name is *
+- <set name=<star>>Nice to meet you <get name>
+
++ what is my name
+* <get name> == undefined => I don't think you told me your name, what is it?
+- Your name is <get name>, silly!
+- You told me your name is <get name>? {weight=3}
+
++ who am i
+* <get name> == undefined => I don't think you told me, what's your name?
+- Aren't you <get name>?
+- You told me your name is <get name>. 
+
++ who are you
+- I am Patty.
+
 + [*] (hi|hello|hey|patty) [*]
 - Hi, I am Patty. I am here to talk to you about everything pad related. What do you wanna know?
 
@@ -367,7 +444,7 @@
 ^ - Birth control
 ^ - Sexual health
 
-+ [*](tampon|tamponss)[*]
++ [*](tampon|tampons)[*]
 - Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
 
 ! local concat = none
@@ -379,6 +456,25 @@
 > topic menstrualcups
 
 ! local concat = newline
+
++ (whats|what is) your name
+- My name is Cooper, what's your name?
+
++ my name is *
+- <set name=<star>>Nice to meet you <get name>
+
++ what is my name
+* <get name> == undefined => I don't think you told me your name, what is it?
+- Your name is <get name>, silly!
+- You told me your name is <get name>? {weight=3}
+
++ who am i
+* <get name> == undefined => I don't think you told me, what's your name?
+- Aren't you <get name>?
+- You told me your name is <get name>. {weight=3}
+
++ who are you
+- I am Cooper.
 
 + [*] (hi|hello|hey|cooper) [*]
 - Heyaa, I am Cooper. I am here to tell you all about menstrual cups. What do you wanna know?
@@ -404,7 +500,7 @@
 + [*](pad|pads)[*]
 - Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
 
-+ [*](tampon|tamponss)[*]
++ [*](tampon|tampons)[*]
 - Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
 
 + *
@@ -467,6 +563,25 @@
 > topic birthcontrol
 
 ! local concat = newline
+
++ (whats|what is) your name
+- My name is Ivy, what's your name?
+
++ my name is *
+- <set name=<star>>Nice to meet you <get name>
+
++ what is my name
+* <get name> == undefined => I don't think you told me your name, what is it?
+- Your name is <get name>, silly!
+- You told me your name is <get name>?
+
++ who am i
+* <get name> == undefined => I don't think you told me, what's your name?
+- Aren't you <get name>?
+- Your name is <get name>.
+
++ who are you
+- I am Ivy.
 
 + [*] (hi|hello|hey|ivy) [*]
 - Hii, I am Ivy. I am here to tell you everything about birth control. So, what do you want to know? {topic=birthcontrol} <call>changebackground png/ivy.png</call>
@@ -542,7 +657,7 @@
 + can i get pregnant when i am on birth control
 - Although most women do not get pregnant while on birth control, there is a small possibility your contraception can fail as no birth control method is 100% effective. The only way to be 100% sure you will not get pregnant, is to not have any penetrative vaginal sex. One way to further protect yourself is to use more than one method of birth control, for example, the pill and a condom, although this still is not 100% effective.  
 
-+ does birth control protect against (stis|stds)
++ does birth control protect against (stis|stds|sti|std)
 - Although birth control such as the pill, patch, ring, and IUD are very effective at preventing pregnancy, they do not protect against STIs and HIV. The only form of contraception that also protects against STIs is condoms, for example, the male external condoms or the female vaginal condom. However, The most reliable way to avoid STDs is to not have vaginal, anal, or oral sex. 
 
 + *
@@ -607,6 +722,25 @@
 > topic sexualhealth
 
 ! local concat = newline
+
++ (whats|what is) your name
+- My name is Connie, what's your name?
+
++ my name is *
+- <set name=<star>>I love that name! Great to meet you <get name>.
+
++ what is my name
+* <get name> == undefined => I don't think you told me your name, what is it?
+- Your name is <get name>, duh!
+- Are you suffering from memeory loss <get name>?
+
++ who am i
+* <get name> == undefined => I don't think you told me, what's your name?
+- Your name is <get name>, duh!
+- Are you suffering from memeory loss <get name>?
+
++ who are you
+- I am Connie
 
 + [*] (hi|hello|hey|connie) [*]
 - Yoo, Connie here. I heard you wanted to know some more about sexual health. What can I tell you about it?{topic=sexualhealth} <call>changebackground png/connie.png</call>
