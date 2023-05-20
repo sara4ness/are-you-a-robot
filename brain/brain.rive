@@ -20,6 +20,25 @@
 ^ - Sexual health\n
 ^ If you want to learn more about one of these topics just respond with the topic you wanna talk about.
 
++ (whats|what is) your name
+- My name is Ottie, what's your name?
+
++ my name is *
+- <set name=<star>>Nice to meet you <get name>
+
++ what is my name
+* <get name> == undefined => I don't think you told me your name, what is it?
+- Your name is <get name>, silly!{weight=3}
+- You told me your name is <get name>.
+
++ who am i
+* <get name> == undefined => I don't think you told me, what's your name?
+- Aren't you <get name>?
+- You told me your name is <get name>. {weight=3}
+
++ who are you
+- I am Ottie.
+
 + *
 * <star> == sanitary products => Do you want to talk about pads, tampons or menstrual cups?
 * <star> == birth control => Hii, I am Ivy. I am here to tell you everything about birth control. So, what do you want to know? {topic=birthcontrol} <call>changebackground png/ivy.png</call>
@@ -57,6 +76,25 @@
 > topic periods
 
 ! local concat = newline
+
++ (whats|what is) your name
+- My name is Ottie, what's your name?
+
++ my name is *
+- <set name=<star>>Nice to meet you <get name>
+
++ what is my name
+* <get name> == undefined => I don't think you told me your name, what is it?
+- You are <get name>! {weight=3}
+- You told me your name is <get name>? 
+
++ who am i
+* <get name> == undefined => I don't think you told me, what's your name?
+- Aren't you <get name>?
+- You are <get name>!
+
++ who are you
+- I am Ottie!
 
 + (hi|hello|hey)
 - Hi, my name is Ottie, I am an ovarie. What do you wanna know about periods? <call>changebackground png/olive.png</call>
@@ -170,6 +208,26 @@
 
 
 > topic tampons
+
++ (whats|what is) your name
+- My name is Tammy, what's your name?
+
++ my name is *
+- <set name=<star>>Nice to meet you <get name>
+
++ what is my name
+* <get name> == undefined => I don't think you told me your name, what is it?
+- Your name is <get name>, silly!
+- You told me your name is <get name>? {weight=3}
+
++ who am i
+* <get name> == undefined => I don't think you told me, what's your name?
+- Aren't you <get name>?
+- You told me your name is <get name>. {weight=3}
+
++ who are you
+- I am Tammy.
+
 + [*] (hi|hello|hey|tammy) [*]
 - Hi, I am Tammy. I am here to talk to you about everything tampon related. What do you wanna know? <call>changebackground png/tammy.png</call>
 
@@ -297,6 +355,25 @@
 > topic pads
 ! local concat = newline
 
++ (whats|what is) your name
+- My name is Patty, what's your name?
+
++ my name is *
+- <set name=<star>>Nice to meet you <get name>
+
++ what is my name
+* <get name> == undefined => I don't think you told me your name, what is it?
+- Your name is <get name>, silly!
+- You told me your name is <get name>? {weight=3}
+
++ who am i
+* <get name> == undefined => I don't think you told me, what's your name?
+- Aren't you <get name>?
+- You told me your name is <get name>. 
+
++ who are you
+- I am Patty.
+
 + [*] (hi|hello|hey|patty) [*]
 - Hi, I am Patty. I am here to talk to you about everything pad related. What do you wanna know?
 
@@ -367,7 +444,7 @@
 ^ - Birth control
 ^ - Sexual health
 
-+ [*](tampon|tamponss)[*]
++ [*](tampon|tampons)[*]
 - Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
 
 ! local concat = none
@@ -379,6 +456,25 @@
 > topic menstrualcups
 
 ! local concat = newline
+
++ (whats|what is) your name
+- My name is Cooper, what's your name?
+
++ my name is *
+- <set name=<star>>Nice to meet you <get name>
+
++ what is my name
+* <get name> == undefined => I don't think you told me your name, what is it?
+- Your name is <get name>, silly!
+- You told me your name is <get name>? {weight=3}
+
++ who am i
+* <get name> == undefined => I don't think you told me, what's your name?
+- Aren't you <get name>?
+- You told me your name is <get name>. {weight=3}
+
++ who are you
+- I am Cooper.
 
 + [*] (hi|hello|hey|cooper) [*]
 - Heyaa, I am Cooper. I am here to tell you all about menstrual cups. What do you wanna know?
@@ -404,7 +500,7 @@
 + [*](pad|pads)[*]
 - Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
 
-+ [*](tampon|tamponss)[*]
++ [*](tampon|tampons)[*]
 - Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
 
 + *
@@ -468,6 +564,25 @@
 
 ! local concat = newline
 
++ (whats|what is) your name
+- My name is Ivy, what's your name?
+
++ my name is *
+- <set name=<star>>Nice to meet you <get name>
+
++ what is my name
+* <get name> == undefined => I don't think you told me your name, what is it?
+- Your name is <get name>, silly!
+- You told me your name is <get name>?
+
++ who am i
+* <get name> == undefined => I don't think you told me, what's your name?
+- Aren't you <get name>?
+- Your name is <get name>.
+
++ who are you
+- I am Ivy.
+
 + [*] (hi|hello|hey|ivy) [*]
 - Hii, I am Ivy. I am here to tell you everything about birth control. So, what do you want to know? {topic=birthcontrol} <call>changebackground png/ivy.png</call>
 
@@ -522,7 +637,11 @@
 + what is (an|the) implant
 - The implant is another form of birth control and is a small implantable medical device often inserted into your arm to protect you from pregnancy. It works by slowly releasing a dose of progesterone into your body which prevents your ovaries from releasing an egg.  
 
+<<<<<<< HEAD
 + (what types of birth control exists|what birth control is available|what are the types of birth control|what birth control can i take|what types of birth control can i take|what type of birth control can i take)
+=======
++ what (types|kind|kinds) of birth control exists
+>>>>>>> 05c6c156920e617fc4cc924027d0e207fa86a94b
 - There are many types of birth control available in the UK, however, not all contraceptive methods may work for your body and your needs. To find out which birth control method works best for you I recommend contacting a healthcare professional such as your GP or a sexual health clinic.\n 
 ^Some factors that may affect which birth control you choose are: the reason for taking the birth control, whether you want reversible or permanent protection, how often you want to take birth control, how regularly you want a period,  hormonal requirements or any family history of blood clots. Some of the options available are: 
 ^ - The combined pill 
@@ -535,9 +654,9 @@
 ^ - The IDU 
 ^ - The hormonal coil 
 ^ - Vaginal ring\n  
-^For more information on each birth control option and for a more extensive list, please read the information provided by the NHS: <a href="hhttps://www.nhs.uk/conditions/contraception/ ">Read more here.</a>\n
+^For more information on each birth control option and for a more extensive list, please read the information provided by the NHS: <a href="https://www.nhs.uk/conditions/contraception/">Read more here.</a>\n
 
-+ [*] the morning after pill
++ [*] [the] morning after pill [*]
 - Emergency contraception should only be taken within 3 days of having unprotected sex to lessen your chances of getting pregnant. However, remember the sooner you take it, the more likely it is to be effective.\n 
 ^There are 2 types of morning after pill available in the UK. Levonelle which you must take within 3 days of having unprotected sex, or the ellaOne which you must take within 5 days of having unprotected sex. Most women can use the emergency contraceptive pill. This includes women who can't use hormonal contraception, such as the combined pill, contraceptive patch and girls under 16 years old.\n  
 ^To access the morning after pill for free you should visit contraception clinics, Brook centres, some pharmacies, most sexual health or genitourinary medicine (GUM) clinics, most NHS walk-in centres and minor injuries units, most GP surgeries and some hospital accident and emergency (A&E) departments.\n  
@@ -554,7 +673,7 @@
 + can i get pregnant when i am on birth control
 - Although most women do not get pregnant while on birth control, there is a small possibility your contraception can fail as no birth control method is 100% effective. The only way to be 100% sure you will not get pregnant, is to not have any penetrative vaginal sex. One way to further protect yourself is to use more than one method of birth control, for example, the pill and a condom, although this still is not 100% effective.  
 
-+ does birth control protect against (stis|stds)
++ does birth control protect against (stis|stds|sti|std)
 - Although birth control such as the pill, patch, ring, and IUD are very effective at preventing pregnancy, they do not protect against STIs and HIV. The only form of contraception that also protects against STIs is condoms, for example, the male external condoms or the female vaginal condom. However, The most reliable way to avoid STDs is to not have vaginal, anal, or oral sex. 
 
 + *
@@ -619,6 +738,25 @@
 > topic sexualhealth
 
 ! local concat = newline
+
++ (whats|what is) your name
+- My name is Connie, what's your name?
+
++ my name is *
+- <set name=<star>>I love that name! Great to meet you <get name>.
+
++ what is my name
+* <get name> == undefined => I don't think you told me your name, what is it?
+- Your name is <get name>, duh!
+- Are you suffering from memeory loss <get name>?
+
++ who am i
+* <get name> == undefined => I don't think you told me, what's your name?
+- Your name is <get name>, duh!
+- Are you suffering from memeory loss <get name>?
+
++ who are you
+- I am Connie
 
 + [*] (hi|hello|hey|connie) [*]
 - Yoo, Connie here. I heard you wanted to know some more about sexual health. What can I tell you about it?{topic=sexualhealth} <call>changebackground png/connie.png</call>
