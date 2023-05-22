@@ -133,6 +133,7 @@
 + (hi|hello|hey)
 - Hi, my name is Ottie, I am an ovarie. Here are some questions you can ask me:\n <call>changebackground png/olive.png</call>
 ^What is a period?\n
+^Do i have my period?\n 
 ^What happens on a period?\n
 ^Why have I missed a period?\n 
 ^Do periods hurt?\n
@@ -143,8 +144,9 @@
 - A period is part of the natural menstrual cycle. It's when the lining of your uterus sheds, leading to blood and tissue coming out of your vagina. A period will usually last anywhere from 2-7 days but will vary for everyone!\n 
 ^If your period changes drastically surrounding duration, or flow you may want to consult your doctor for a check-up and advice! 
 
-+ * (do i|have i) (have|get|got) * period
-- A period is part of the natural menstrual cycle. It's when the lining of your uterus sheds, leading to blood and tissue coming out of your vagina. A period will usually last anywhere from 2-7 days but will vary for everyone!\n 
++ (do i|have i|have|get|got) * period
+- If you notice blood or blood clumping coming from your vagina, then you probably have your period! Do not worry 🫶🏻 \n 
+^A period is part of the natural menstrual cycle. It's when the lining of your uterus sheds, leading to blood and tissue coming out of your vagina. A period will usually last anywhere from 2-7 days but will vary for everyone!\n 
 ^If your period changes drastically surrounding duration, or flow you may want to consult your doctor for a check-up and advice! 
 
 + what happens on a period  
